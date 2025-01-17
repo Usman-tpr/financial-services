@@ -1,0 +1,979 @@
+{
+    "comment1":"Navbar Content *******************************************************************************************",
+    "brandName":"AlHAYAT",
+    "navitem1":"About Us",
+    "navitem2":"Services",
+    "navitem3":"Sectors",
+    "navitem4":"Clients",
+    "navitem5":"Peoples",
+    "navitem6":"Careers",
+    "navitem7":"Contact Us",
+
+    "navitem1Submenu1":"The Essence of AlHayat",
+    "navitem1Submenu2":"Our Values",
+    "navitem1Submenu3":"Our Mission & Vision",
+    "navitem1Submenu4":"Privacy",
+
+    "navitem2Submenu1":"Sevices Overview",
+    "navitem2Submenu2":"Advisory",
+    "navitem2Submenu3":"Taxation",
+    "navitem2Submenu4":"Capacity Development",
+    "navitem2Submenu5":"Legal & Corporate Services",
+    "navitem2Submenu6":"Research & Survey",
+    "navitem2Submenu7":"Asset Management",
+
+    "navitem3Submenu1":"OverView",
+    "navitem3Submenu2":"Public Sector",
+    "navitem3Submenu3":"Private Sector",
+    "navitem3Submenu4":"NGO's & Welfare",
+
+    "navitem4Submenu1":"Key Clients",
+
+    "navitem5Submenu1":"Senior Management",
+
+
+    "title":"Empowering Your Financial Future with Trusted Advisory and Taxation Solutions",
+    "description":"At AlHayat, we provide expert financial advisory and tax solutions to businesses and individuals across Afghanistan. Our experienced team is dedicated to helping you navigate complex financial landscapes, ensuring compliance, optimizing tax strategies, and driving sustainable growth. Whether you're looking for tax advice, financial planning, or business consulting, AlHayat is here to support your financial success.",
+
+    "comment2":"Home About Section **********************************************************************************************",
+    "aboutSectionTitle":"AlHayat Company at a Glance",
+    "aboutSectionDesc":"AlHayat Company, established in 2015, is a trusted financial and tax advisory firm led by a team of industry leaders with globally recognized qualifications. Committed to delivering excellence, AlHayat combines experience, innovation, and integrity to empower businesses and individuals alike",
+    "aboutSectionCardTitle2":"Taxation Services",
+    "aboutSectionCardDesc2":"Comprehensive advisory, compliance, and strategic planning.",
+    "aboutSectionCardTitle3":"Financial Management",
+    "aboutSectionCardDesc3":"Accounting, financial modeling, and valuations.",
+    "aboutSectionCardTitle4":"Advisory Services",
+    "aboutSectionCardDesc4":"Management consulting, capacity building, and research.",
+    "aboutSectionCardTitle5":"Legal & Corporate Services",
+    "aboutSectionCardDesc5":"Company structuring and regulatory compliance.",
+    "aboutSectionButton":"Learn More About Us",
+
+    "comment3":"ourmission ******************************************************************************************************",
+        "alHayat": {
+          "missionTitle": "Our Mission",
+          "missionDescription": "AlHayat is a professional corporation dedicated to providing the most trusted quality financial and tax advisory services. We go beyond traditional methods to deliver innovative solutions, fostering the growth of our clients by keeping our promises, offering proactive support, and building capacity while serving the community.",
+          "visionTitle": "Our Vision",
+          "visionDescription": "To be recognized as one of the most trusted and respected financial service providers on both National and International levels.",
+          "whyTitle": "Why AlHayat?",
+          "whyPoints": [
+            "Unmatched expertise in financial and tax services",
+            "Client-centric approach with tailored solutions",
+            "Proven track record of excellence and integrity",
+            "Commitment to nurturing professional talent",
+            "Strong community focus with impactful initiatives",
+            "Comprehensive services under one roof"
+          ]
+        },
+      
+
+        "commment4":"what we offer ***********************************************************************************************",
+            "what_we_offer": {
+              "title": "What We Offer",
+              "services": [
+                {
+                  "name": "Advisory",
+                  "description": "Expert advice on strategic decisions, financial management, and more.",
+                  "icon": "/images/advisory.png"
+                },
+                {
+                  "name": "Taxation",
+                  "description": "Tax advisory and compliance services for businesses and individuals.",
+                  "icon": "/images/taxadvisory.png"
+                },
+                {
+                  "name": "Capacity Development",
+                  "description": "Training and development services to enhance skills and capabilities.",
+                  "icon": "/images/capacity.png"
+                },
+                {
+                  "name": "Legal & Corporate",
+                  "description": "Legal advice and corporate services tailored to your business needs.",
+                  "icon": "/images/legal.png"
+                },
+                {
+                  "name": "Research & Survey",
+                  "description": "Conducting detailed research and surveys to support business decisions.",
+                  "icon": "/images/research.png"
+                },
+                {
+                  "name": "Asset Management",
+                  "description": "Managing assets for optimal growth and performance.",
+                  "icon": "/images/asset.png"
+                }
+              ]
+            },
+
+            "comment5":"subscibe *****************************************************************************************************",
+                "subscribe_section": {
+                  "title": "Subscribe to Our News and Updates",
+                  "button_text": "Subscribe Now",
+                  "popup_title": "Subscribe to Our Newsletter",
+                  "name_label": "Full Name",
+                  "email_label": "Email Address",
+                  "subscribe_button": "Subscribe"
+                },
+              
+                "comment6":"lets get in touch *****************************************************************************************",
+                    "contact_section": {
+                      "title": "Let's Get in Touch",
+                      "description": "We'd love to hear from you. Feel free to reach out to us via any of the following methods.",
+                      "phone_label": "Phone",
+                      "email_label": "Email",
+                      "facebook_label": "Facebook",
+                      "linkedin_label": "LinkedIn"
+                    },
+
+                    "comment7":"footer ***********************************************************************************************",
+                        "footer": {
+                          "brand_name": "AlHAYAT",
+                          "about_us": "About Us",
+                          "services": "Services",
+                          "sectors": "Sectors",
+                          "clients": "Clients",
+                          "peoples": "Peoples",
+                          "careers": "Careers",
+                          "contact_us": "Contact Us",
+                          "quick_links": "Quick Links",
+                          "follow_us": "Follow Us",
+                          "newsletter": "Subscribe to Our Newsletter",
+                          "newsletter_placeholder": "Enter your email",
+                          "subscribe_button": "Subscribe",
+                          "address": "123 Main Street, Kabul, Afghanistan",
+                          "email": "info@alhayat.com",
+                          "phone": "+1234567890"
+                        },
+
+                        "comment8":"About all pages ******************************************************",
+                            "aboutPage": {
+                              "title": "About AlHayat Company",
+                              "description": "AlHayat Company is a trusted financial advisory and taxation company based in Afghanistan.",
+                              "glanceTitle": "AlHayat at a Glance",
+                              "glanceDescription": "AlHayat is a privately owned company with extensive experience in finance, taxation, and advisory services. The team is comprised of professionals holding ACCA, CA, CPA, CIA, and other qualifications, ensuring exceptional service delivery.",
+                              "servicesTitle": "Scope of Services"
+                            },
+                            "individualsInvestors": "Individuals and Investors",
+                            "individualsDescription": "Providing expert financial and taxation services tailored for individual clients and investors.",
+                            "smallBusinesses": "Small Businesses",
+                            "smallBusinessesDescription": "Supporting small businesses with employees ranging from 1 to 24 in financial and tax compliance.",
+                            "mediumBusinesses": "Medium Businesses",
+                            "mediumBusinessesDescription": "Empowering medium-sized enterprises with robust financial and advisory solutions.",
+                            "largeBusinesses": "Large Businesses",
+                            "largeBusinessesDescription": "Catering to large corporations with specialized and scalable services.",
+                            "authoritiesOrganizations": "Authorities and Public Organizations",
+                            "authoritiesDescription": "Collaborating with authorities to ensure compliance and effective financial management.",
+                            "ngos": "National & International NGOs",
+                            "ngosDescription": "Providing financial advisory and management services to NGOs working locally and globally.",
+
+                            "comment9":"second page *******************************************************************************************",
+                                "valuesPage": {
+                                  "title": "Our Values",
+                                  "description": "At AlHayat, we uphold the principles that drive our excellence and commitment to our clients and community.",
+                                  "subtitle": "AlHayat Values WIESCEL"
+                                },
+                                "values": {
+                                  "workEthic": "Work Ethic",
+                                  "integrity": "Integrity",
+                                  "employeesAsset": "Employees: Our Most Valuable Asset",
+                                  "clientService": "Service to Our Clients & Community",
+                                  "confidentiality": "Confidentiality & Competency",
+                                  "expertPartners": "Expert Business Partners",
+                                  "leadershipManagement": "Leadership & Management"
+                                },
+
+                                "comment":"third paage ****************************************************************************************",
+                                    "missionVisionPage": {
+                                      "title": "Our Mission & Vision",
+                                      "description": "Discover the principles and aspirations that define AlHayat's success.",
+                                      "missionTitle": "Our Mission",
+                                      "missionText": "AlHayat is a professional corporation committed to providing the most trusted quality services to clients. In addition, it will go beyond just the numbers and provide non-traditional services. AlHayat’s goal is to enhance the client's growth by honoring its promises to them, providing proactive assistance and consultation while continuously developing the staff capacity and serving the community by supporting and participating in civil activities.",
+                                      "missionImage": "https://cdn.pixabay.com/photo/2023/07/19/23/04/ai-generated-8138052_640.png",
+                                      "visionTitle": "Our Vision",
+                                      "visionText": "To be reckoned as one of the 'Best Service Providers' on National and International levels.",
+                                      "visionImage": "https://cdn.pixabay.com/photo/2024/11/07/23/06/analytics-9181979_640.png"
+                                    },
+
+                                    "comment10":"fourth page **************************************************************************************",
+                                        "privacyPolicyPage": {
+                                          "title": "Privacy Policy",
+                                          "description": "At AlHayat, we value your trust and take your privacy seriously.",
+                                          "commitmentTitle": "Our Commitment to Privacy",
+                                          "commitmentText": "AlHayat values client privacy. Any information pertaining to the operations of your organization will be held strictly confidential. We require strict adherence by all our staff to the ethical rules of our profession. The firm and its employees maintain strict confidentiality towards information obtained while carrying out professional duties and remain independent in relationships with clients. Our goal is to provide quality and transcendent services to all our clients.",
+                                          "personalInfoTitle": "Handling Personal Information",
+                                          "personalInfoText": "Our commitment to clients is to protect personal and business information entrusted to us during professional services. Each of our employees is responsible for maintaining confidentiality and security. The Personal Information Protection and Electronic Documents Act (PIPEDA) governs how personal information is handled. Personal information includes identifiable details like home address, date of birth, and financial information.",
+                                          "rulesTitle": "Rules of Conduct",
+                                          "rulesText": "The AlHayat team follows the Rules of Professional Conduct maintained by the IFAC. These rules establish standards for collecting and using personal information.",
+                                          "recourseTitle": "Recourse",
+                                          "recourseText": "If you have concerns or complaints about your personal information or our Privacy Policy, contact our Privacy and Confidentiality leader in writing by email or mail.",
+                                          "phoneLabel": "Phone",
+                                          "phone": "+93 (0) 776 41 53 81",
+                                          "emailLabel": "Email",
+                                          "email": "privacy@alhayat.org.af",
+                                          "addressLabel": "Address",
+                                          "address": "OFFICE #6, 4TH FLOOR, Muslim Business Center, Haji Yaqoob Square, Shar-e-naw Kabul, Afghanistan"
+                                        },
+
+                                        "comment11":"services page ******************************************************************************************",
+                                            "services": [
+                                              {
+                                                "category": "Advisory",
+                                                "points": [
+                                                  "Risk Advisory & Crises Management",
+                                                  "Accounting and Book Keeping",
+                                                  "Financial Planning",
+                                                  "Budgeting, forecasting and business planning",
+                                                  "Management accounting",
+                                                  "Business Consultancy",
+                                                  "Human Resources",
+                                                  "Litigation Support",
+                                                  "Business Valuation",
+                                                  "Payroll Management",
+                                                  "Standards for Not-For-Profit Organizations (ASNPO)",
+                                                  "Company secretarial services including company formation & promotion"
+                                                ]
+                                              },
+                                              {
+                                                "category": "Taxation",
+                                                "points": [
+                                                  "Corporate Tax Compliance",
+                                                  "Employment Tax",
+                                                  "Income Tax",
+                                                  "Value Added Tax-VAT",
+                                                  "Property Tax",
+                                                  "International/Double Taxation",
+                                                  "Tax Controversy and Dispute Resolution",
+                                                  "Tax Advisory"
+                                                ]
+                                              },
+                                              {
+                                                "category": "Capacity Development",
+                                                "points": [
+                                                  "Financial Management",
+                                                  "Accounting and Auditing",
+                                                  "Business Management",
+                                                  "Human Resource",
+                                                  "Strategy Management",
+                                                  "Office Management",
+                                                  "Quality Management System",
+                                                  "Planning and Budgeting",
+                                                  "Business Communication",
+                                                  "Risk Management",
+                                                  "Internal Controls & Audit"
+                                                ]
+                                              },
+                                              {
+                                                "category": "Legal & Corporate",
+                                                "points": [
+                                                  "Consultation for legal information and advice",
+                                                  "Consultation to review documents (such as agreements, leases, wills, corporation documents, do-it-yourself court forms)",
+                                                  "Mediation, arbitration, or other third party services",
+                                                  "Preparation of litigation documents",
+                                                  "Obtaining business license for national and international orgs",
+                                                  "Emigration services as obtaining entry Visa and Work Permit",
+                                                  "Assistance the client with dissolution procedures",
+                                                  "Recruitment support to national and international orgs",
+                                                  "Procurement support to national and international orgs",
+                                                  "Facilities Management support to national and international orgs"
+                                                ]
+                                              },
+                                              {
+                                                "category": "Research & Survey",
+                                                "points": [
+                                                  "Qualitative Research",
+                                                  "Quantitative Research",
+                                                  "Theoretical Research",
+                                                  "Applied Research",
+                                                  "Exploratory Research",
+                                                  "Descriptive Research",
+                                                  "Casual and Fundamental Research",
+                                                  "Experimental Research",
+                                                  "Online Surveys",
+                                                  "Paper Surveys",
+                                                  "Cross-Sectional Studies",
+                                                  "Longitudinal Surveys"
+                                                ]
+                                              },
+                                              {
+                                                "category": "Asset Management",
+                                                "points": [
+                                                  "Cash Management Service",
+                                                  "Inventory Planning & controlling",
+                                                  "Replenishment Services",
+                                                  "Material Optimization",
+                                                  "Inventory Cost Accounting",
+                                                  "Warehouse Operations Optimization"
+                                                ]
+                                              }
+                                            ],
+
+                                            "comment12":"advisory *************************************************************************************",
+                                              "header": "Our Approach",
+                                              "advisorytitle": "Financial Advisory and Taxation Services",
+                                              "advisorydescription": "Discover Alhayat's tailored approach to financial advisory and taxation, ensuring comprehensive solutions for our clients.",
+                                              "advisorySections": [
+                                                {
+                                                  "header": "Initiate and Plan",
+                                                  "description": "Kickstart the project with structured planning and seamless collaboration.",
+                                                  "content": [
+                                                    {
+                                                      "icon": "FaClipboardList",
+                                                      "text": "Planning meetings"
+                                                    },
+                                                    {
+                                                      "icon": "FaHandshake",
+                                                      "text": "Introduction with organization"
+                                                    },
+                                                    {
+                                                      "icon": "FaUsers",
+                                                      "text": "Team mobilization"
+                                                    },
+                                                    {
+                                                      "icon": "FaPhoneAlt",
+                                                      "text": "Establish communication and project protocols"
+                                                    },
+                                                    {
+                                                      "icon": "FaFileAlt",
+                                                      "text": "Prepare and submit detailed work plan"
+                                                    },
+                                                    {
+                                                      "icon": "FaInfoCircle",
+                                                      "text": "Request initial information"
+                                                    },
+                                                    {
+                                                      "icon": "FaHandshake",
+                                                      "text": "Agree communication formats"
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "header": "Execute",
+                                                  "description": "Implement the plan with thorough evaluation and collaboration.",
+                                                  "content": [
+                                                    {
+                                                      "icon": "FaBuilding",
+                                                      "text": "Visit the entity"
+                                                    },
+                                                    {
+                                                      "icon": "FaSearch",
+                                                      "text": "Understanding of policies and procedures"
+                                                    },
+                                                    {
+                                                      "icon": "FaTasks",
+                                                      "text": "Assessments and evaluation of current state in accordance with TORs"
+                                                    },
+                                                    {
+                                                      "icon": "FaVial",
+                                                      "text": "Testing of transactions"
+                                                    },
+                                                    {
+                                                      "icon": "FaExclamationTriangle",
+                                                      "text": "Identification of gaps and recommendation of remedial/corrective actions"
+                                                    },
+                                                    {
+                                                      "icon": "FaComments",
+                                                      "text": "Briefing meetings with organization"
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "header": "Reporting & Close Out",
+                                                  "description": "Finalize and deliver reports with clear insights and actionable recommendations.",
+                                                  "content": [
+                                                    {
+                                                      "icon": "FaFileExport",
+                                                      "text": "Prepare and submit draft review/assessment report"
+                                                    },
+                                                    {
+                                                      "icon": "FaUsers",
+                                                      "text": "Provide briefing to the respective stakeholders from clients"
+                                                    },
+                                                    {
+                                                      "icon": "FaFileAlt",
+                                                      "text": "Finalization and submission of the review/assessment reports to client"
+                                                    },
+                                                    {
+                                                      "icon": "FaHandshake",
+                                                      "text": "Carry out closing meeting"
+                                                    }
+                                                  ]
+                                                }
+                                              ],
+
+                                              "comment13":"Taxation ************************************************************************",
+                                                "taxationtitle": "Strategic Planning and Execution",
+                                                "taxationdescription": "Alhayat delivers expert planning and execution to ensure seamless financial and taxation solutions for our clients.",
+                                                "sections": [
+                                                  {
+                                                    "header": "Planning",
+                                                    "description": "Laying a strong foundation through structured meetings and comprehensive planning.",
+                                                    "content": [
+                                                      {
+                                                        "icon": "FaClipboardList",
+                                                        "text": "Planning meetings"
+                                                      },
+                                                      {
+                                                        "icon": "FaUsers",
+                                                        "text": "Orientation/Kick-off meeting"
+                                                      },
+                                                      {
+                                                        "icon": "FaListAlt",
+                                                        "text": "Identify requirements and perform the related planning"
+                                                      },
+                                                      {
+                                                        "icon": "FaEye",
+                                                        "text": "Obtain understanding of the current state"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "header": "Execution",
+                                                    "description": "Implementing a detailed assessment procedure with thorough data analysis and collaboration.",
+                                                    "content": [
+                                                      {
+                                                        "icon": "FaDatabase",
+                                                        "text": "Data Collection"
+                                                      },
+                                                      {
+                                                        "icon": "FaFileAlt",
+                                                        "text": "Reviewing the transactions, accounting records, financial reports, and tax documents"
+                                                      },
+                                                      {
+                                                        "icon": "FaComments",
+                                                        "text": "Analyze the accounting records and conduct meetings with relevant authorities"
+                                                      },
+                                                      {
+                                                        "icon": "FaTasks",
+                                                        "text": "Perform the assessment procedure"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "header": "Conclusion",
+                                                    "description": "Finalizing processes with transparent reporting and documentation.",
+                                                    "content": [
+                                                      {
+                                                        "icon": "FaHandshake",
+                                                        "text": "Exchange closing letters"
+                                                      },
+                                                      {
+                                                        "icon": "FaCalculator",
+                                                        "text": "Determine the tax payable/tax payment amount"
+                                                      },
+                                                      {
+                                                        "icon": "FaFileInvoice",
+                                                        "text": "Collection of tax clearance documents from tax department"
+                                                      }
+                                                    ]
+                                                  }
+                                                ],
+
+                                                "comment14":"capacity Development ********************************************************",
+                                                  "capacitytitle": "Alhayat Capacity Development Methodology",
+                                                  "capacitydescription": "Alhayat excels in delivering top-notch institutional training and capacity-building solutions to empower organizations.",
+                                                  "capacitysections": [
+                                                    {
+                                                      "header": "Expertise Areas",
+                                                      "description": "Providing extensive training in diverse fields to enhance organizational capabilities.",
+                                                      "content": [
+                                                        {
+                                                          "icon": "FaBook",
+                                                          "text": "General accounting"
+                                                        },
+                                                        {
+                                                          "icon": "FaChartBar",
+                                                          "text": "IFRS"
+                                                        },
+                                                        {
+                                                          "icon": "FaDollarSign",
+                                                          "text": "Financial management and budgeting"
+                                                        },
+                                                        {
+                                                          "icon": "FaBoxes",
+                                                          "text": "Inventory management"
+                                                        },
+                                                        {
+                                                          "icon": "FaLaptop",
+                                                          "text": "IT and E-Governance"
+                                                        },
+                                                        {
+                                                          "icon": "FaRegClipboard",
+                                                          "text": "Regulatory reporting and financial controlling"
+                                                        },
+                                                        {
+                                                          "icon": "FaBriefcase",
+                                                          "text": "Business development and marketing"
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "header": "Training Approach",
+                                                      "description": "Our professional team focuses on impactful training through innovative and interactive methods.",
+                                                      "content": [
+                                                        {
+                                                          "icon": "FaUsersCog",
+                                                          "text": "Upgrading knowledge base"
+                                                        },
+                                                        {
+                                                          "icon": "FaRegHandshake",
+                                                          "text": "Changing work behavior"
+                                                        },
+                                                        {
+                                                          "icon": "FaLightbulb",
+                                                          "text": "Building imperative attitudes"
+                                                        },
+                                                        {
+                                                          "icon": "FaHandsHelping",
+                                                          "text": "Using various motivating techniques"
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "header": "Adult Learning Approach",
+                                                      "description": "Our ALA has a proven track record in effectively delivering training to ensure participants' growth.",
+                                                      "content": [
+                                                        {
+                                                          "icon": "FaBrain",
+                                                          "text": "Enabling easy absorption of knowledge"
+                                                        },
+                                                        {
+                                                          "icon": "FaArrowRight",
+                                                          "text": "Transforming knowledge into tangible results"
+                                                        },
+                                                        {
+                                                          "icon": "FaExchangeAlt",
+                                                          "text": "Promoting interaction-based learning"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+
+                                                  "comment15":"Legal and corporate ***********************************************",
+                                                  
+                                                    "legaltitle": "Alhayat Legal & Corporate Services",
+                                                    "legaldescription": "Alhayat provides tailored legal and corporate solutions to businesses and organizations, ensuring compliance with local and international regulations.",
+                                                    "legalsections": [
+                                                      {
+                                                        "header": "Our Services",
+                                                        "description": "Comprehensive services to help businesses operate smoothly and legally.",
+                                                        "content": [
+                                                          {
+                                                            "icon": "FaGavel",
+                                                            "text": "Consultation for legal information and advice"
+                                                          },
+                                                          {
+                                                            "icon": "FaFileContract",
+                                                            "text": "Document review, including agreements, leases, and wills"
+                                                          },
+                                                          {
+                                                            "icon": "FaHandshake",
+                                                            "text": "Mediation, arbitration, and third-party services"
+                                                          },
+                                                          {
+                                                            "icon": "FaRegFileAlt",
+                                                            "text": "Preparation of litigation documents"
+                                                          },
+                                                          {
+                                                            "icon": "FaBusinessTime",
+                                                            "text": "Obtaining business licenses for national and international organizations"
+                                                          },
+                                                          {
+                                                            "icon": "FaPassport",
+                                                            "text": "Emigration services, including entry visa and work permit assistance"
+                                                          },
+                                                          {
+                                                            "icon": "FaTrashAlt",
+                                                            "text": "Dissolution procedure assistance"
+                                                          },
+                                                          {
+                                                            "icon": "FaUserTie",
+                                                            "text": "Recruitment support for national and international organizations"
+                                                          },
+                                                          {
+                                                            "icon": "FaTruckLoading",
+                                                            "text": "Procurement support for national and international organizations"
+                                                          },
+                                                          {
+                                                            "icon": "FaBuilding",
+                                                            "text": "Facilities management support for national and international organizations"
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "header": "Why Choose Alhayat?",
+                                                        "description": "We ensure smooth implementation, compliance, and adaptability of your corporate structure.",
+                                                        "content": [
+                                                          {
+                                                            "icon": "FaClipboardCheck",
+                                                            "text": "Put the chosen solution into action"
+                                                          },
+                                                          {
+                                                            "icon": "FaCogs",
+                                                            "text": "Administer and control the structure"
+                                                          },
+                                                          {
+                                                            "icon": "FaBalanceScale",
+                                                            "text": "Ensure compliance with local and international laws"
+                                                          },
+                                                          {
+                                                            "icon": "FaSync",
+                                                            "text": "Adapt the structure as needed"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ],
+                                                    "comment16":"research and Survey **********************************************",
+                                                      "researchtitle": "Alhayat Research and Survey Services",
+                                                      "researchdescription": "Alhayat provides precise and trustworthy data to help governments, organizations, and businesses understand complex and unpredictable markets.",
+                                                      "researchsections": [
+                                                        {
+                                                          "header": "Why Choose Us?",
+                                                          "description": "Our team of experts specializes in delivering high-quality research and survey services with precision and ethics.",
+                                                          "content": [
+                                                            {
+                                                              "icon": "FaChartLine",
+                                                              "text": "Extensive expertise in qualitative, quantitative, and mixed methods research"
+                                                            },
+                                                            {
+                                                              "icon": "FaDatabase",
+                                                              "text": "Proficiency in data collection, quality management, and analysis"
+                                                            },
+                                                            {
+                                                              "icon": "FaClipboard",
+                                                              "text": "Strict adherence to research ethics"
+                                                            },
+                                                            {
+                                                              "icon": "FaTachometerAlt",
+                                                              "text": "Fast and accurate results"
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "header": "Our Approach",
+                                                          "description": "We provide comprehensive support throughout your research journey.",
+                                                          "content": [
+                                                            {
+                                                              "icon": "FaLightbulb",
+                                                              "text": "Organizing your study and defining methodologies"
+                                                            },
+                                                            {
+                                                              "icon": "FaTools",
+                                                              "text": "Developing and establishing tools for data collection"
+                                                            },
+                                                            {
+                                                              "icon": "FaUsers",
+                                                              "text": "Locating respondents and gathering field data"
+                                                            },
+                                                            {
+                                                              "icon": "FaChartBar",
+                                                              "text": "Reflecting on findings and presenting results"
+                                                            }
+                                                          ]
+                                                        }
+                                                      ],
+
+                                                      "comment17":"asset management ****************************************************",
+                                                        "assettitle": "Asset Management",
+                                                        "assetdescription": "Alhayat offers critical asset management services to address the ongoing crises and humanitarian challenges in Afghanistan.",
+                                                        "assetsections": [
+                                                          {
+                                                            "header": "Our Mission",
+                                                            "content": [
+                                                              {
+                                                                "icon": "FaChartLine",
+                                                                "text": "Support communities affected by economic and humanitarian crises"
+                                                              },
+                                                              {
+                                                                "icon": "FaDatabase",
+                                                                "text": "Ensure efficient allocation and utilization of resources"
+                                                              },
+                                                              {
+                                                                "icon": "FaClipboard",
+                                                                "text": "Maintain accountability in asset distribution and management"
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "header": "Our Approach",
+                                                            "content": [
+                                                              {
+                                                                "icon": "FaTachometerAlt",
+                                                                "text": "Rapid response to critical asset distribution needs"
+                                                              },
+                                                              {
+                                                                "icon": "FaLightbulb",
+                                                                "text": "Innovative methods for managing resources during emergencies"
+                                                              },
+                                                              {
+                                                                "icon": "FaTools",
+                                                                "text": "Collaborative partnerships to enhance resource efficiency"
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "header": "Why Alhayat?",
+                                                            "content": [
+                                                              {
+                                                                "icon": "FaUsers",
+                                                                "text": "Experienced team with a focus on humanitarian and economic stability"
+                                                              },
+                                                              {
+                                                                "icon": "FaChartBar",
+                                                                "text": "Proven track record of managing assets in challenging environments"
+                                                              },
+                                                              {
+                                                                "icon": "FaClipboard",
+                                                                "text": "Commitment to ethical and transparent practices"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ],
+                                                        "comment18":"sector *****************************************************",
+                                                        
+                                                          "sectortitle": "Sectors",
+                                                          "sectordescription": "Eagle-Wise Chartered Accountants collaborates with businesses, public enterprises, and NGOs to provide tailored audit, taxation, and advisory services for a wide range of industries.",
+                                                          "sectorsections": [
+                                                            {
+                                                              "header": "Private Sector",
+                                                              "content": [
+                                                                {
+                                                                  "icon": "FaChartLine",
+                                                                  "text": "Support entrepreneurs and MSMEs to thrive through access to capital and vital services."
+                                                                },
+                                                                {
+                                                                  "icon": "FaClipboard",
+                                                                  "text": "Help organizations maintain precise financial documentation and clear taxation."
+                                                                },
+                                                                {
+                                                                  "icon": "FaUsers",
+                                                                  "text": "Collaborate with incubators and accelerators to foster business growth."
+                                                                }
+                                                              ]
+                                                            },
+                                                            {
+                                                              "header": "Public Sector",
+                                                              "content": [
+                                                                {
+                                                                  "icon": "FaLightbulb",
+                                                                  "text": "Work with public enterprises to provide high-quality services to inhabitants."
+                                                                },
+                                                                {
+                                                                  "icon": "FaChartBar",
+                                                                  "text": "Collaborate with government ministries to deliver impactful solutions."
+                                                                },
+                                                                {
+                                                                  "icon": "FaTachometerAlt",
+                                                                  "text": "Focus on projects that drive value for the country’s public sector."
+                                                                }
+                                                              ]
+                                                            },
+                                                            {
+                                                              "header": "Non-Governmental Organizations (NGOs)",
+                                                              "content": [
+                                                                {
+                                                                  "icon": "FaDatabase",
+                                                                  "text": "Support NGOs and welfare organizations in enhancing their operations."
+                                                                },
+                                                                {
+                                                                  "icon": "FaTools",
+                                                                  "text": "Provide services to charity organizations at minimal costs."
+                                                                },
+                                                                {
+                                                                  "icon": "FaClipboard",
+                                                                  "text": "Offer professional guidance to not-for-profits, sports organizations, and more."
+                                                                }
+                                                              ]
+                                                            },
+                                                            {
+                                                              "header": "Industries Served",
+                                                              "content": [
+                                                                {
+                                                                  "icon": "FaChartLine",
+                                                                  "text": "Manufacturing, mining, energy, and oil and gas."
+                                                                },
+                                                                {
+                                                                  "icon": "FaLightbulb",
+                                                                  "text": "Real estate, IT, and telecommunications."
+                                                                },
+                                                                {
+                                                                  "icon": "FaChartBar",
+                                                                  "text": "Financial institutions, retail, and public sector organizations."
+                                                                }
+                                                              ]
+                                                            }
+                                                          ],
+
+                                                          "comment19":"pages of sectors **********************************************",
+                                                            "publicsector": {
+                                                              "title": "Public Sector",
+                                                              "description": "Eagle-Wise Chartered Accountants has the privilege of working with the public sector in Afghanistan, delivering high-quality services to the government and its people.",
+                                                              "content": [
+                                                                {
+                                                                  "icon": "FaLightbulb",
+                                                                  "text": "Worked with ministries to deliver impactful government projects."
+                                                                },
+                                                                {
+                                                                  "icon": "FaClipboard",
+                                                                  "text": "Provided services to state-owned enterprises for enhanced efficiency."
+                                                                },
+                                                                {
+                                                                  "icon": "FaChartBar",
+                                                                  "text": "Focused on self-financing commercial enterprises controlled by the government."
+                                                                }
+                                                              ]
+                                                            },
+                                                            "privatesector": {
+                                                              "title": "Private Sector",
+                                                              "description": "ECA collaborates with private incubators, accelerators, and companies of all sizes to foster growth for entrepreneurs and MSMEs.",
+                                                              "content": [
+                                                                {
+                                                                  "icon": "FaUsers",
+                                                                  "text": "Supported entrepreneurs and MSMEs with capital and vital services."
+                                                                },
+                                                                {
+                                                                  "icon": "FaChartLine",
+                                                                  "text": "Provided consulting and training to enhance business potential."
+                                                                },
+                                                                {
+                                                                  "icon": "FaClipboard",
+                                                                  "text": "Ensured precise financial documentation and clear taxation."
+                                                                }
+                                                              ]
+                                                            },
+                                                            "ngosector": {
+                                                              "title": "NGO and Welfare",
+                                                              "description": "ECA collaborates with NGOs and charity organizations to enhance their functions by offering services at minimal costs.",
+                                                              "content": [
+                                                                {
+                                                                  "icon": "FaDatabase",
+                                                                  "text": "Assisted NGOs in improving operational efficiency."
+                                                                },
+                                                                {
+                                                                  "icon": "FaTools",
+                                                                  "text": "Provided cost-effective services to charity organizations."
+                                                                },
+                                                                {
+                                                                  "icon": "FaClipboard",
+                                                                  "text": "Supported welfare organizations in various aspects of their functions."
+                                                                }
+                                                              ]
+                                                            },
+                                                            "comment20":"carer******************************",
+                                                              "careers": {
+                                                                "title": "Careers",
+                                                                "description": "Join our team of professionals at ECA. We prioritize hiring the most competent candidates and provide continuous professional development.",
+                                                                "recruitmentProcess": {
+                                                                  "title": "Recruitment Process",
+                                                                  "content": [
+                                                                    {
+                                                                      "icon": "FaClipboardCheck",
+                                                                      "text": "Candidates undergo a series of tests, including numeracy and verbal reasoning."
+                                                                    },
+                                                                    {
+                                                                      "icon": "FaUsers",
+                                                                      "text": "Interviews with HR and Managers to assess the suitability of the candidate."
+                                                                    },
+                                                                    {
+                                                                      "icon": "FaTasks",
+                                                                      "text": "Candidates are required to solve case scenarios to demonstrate problem-solving skills."
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                "professionalDevelopment": {
+                                                                  "title": "Professional Staff Development",
+                                                                  "content": [
+                                                                    {
+                                                                      "icon": "FaChalkboardTeacher",
+                                                                      "text": "Training for all employees is aligned with international standards."
+                                                                    },
+                                                                    {
+                                                                      "icon": "FaGraduationCap",
+                                                                      "text": "Fresh graduates are welcomed as interns and promoted to executive positions."
+                                                                    },
+                                                                    {
+                                                                      "icon": "FaHandHoldingHeart",
+                                                                      "text": "We ensure that our staff develops the necessary skills to deliver quality services."
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                "contact": {
+                                                                  "title": "Interested in Joining?",
+                                                                  "content": "If you would like to work with ECA, kindly contact us at info@eca.org.af."
+                                                                }
+                                                              },
+                                                              "comment21":"contact ***************************************************",
+                                                              
+                                                                "contact": {
+                                                                  "title": "Contact Us",
+                                                                  "address": {
+                                                                    "title": "Our Address",
+                                                                    "content": "OFFICE #6, 4TH FLOOR Muslim Business Center Haji Yaqoob Square, Shar-e-naw Kabul, Afghanistan"
+                                                                  },
+                                                                  "email": {
+                                                                    "title": "Email Us",
+                                                                    "content": "info@eca.org.af"
+                                                                  },
+                                                                  "phone": {
+                                                                    "title": "Call Us",
+                                                                    "numbers": [
+                                                                      "+93 (0) 20 22 02 179",
+                                                                      "+93 (0) 798 87 17 45"
+                                                                    ]
+                                                                  },
+                                                                  "contactForm": {
+                                                                    "name": "Your Name",
+                                                                    "email": "Your Email",
+                                                                    "message": "Message",
+                                                                    "button": "Send Message"
+                                                                  }
+                                                                }
+                                                              
+                                                              
+                                                            
+                                                            
+                                                          
+                                                          
+                                                        
+                                                        
+                                                      
+                                                      
+                                                    
+                                                    
+                                                  
+                                                  
+                                                
+                                                
+                                              
+                                              
+                                            
+                                            
+                                          
+                                          
+                                          
+                                          
+                                      
+                                      
+
+                                    
+                                  
+                                  
+                              
+                              
+                          
+                            
+                          
+                      
+                      
+                  
+                  
+              
+              
+              
+          
+          
+          
+          
+      
+      
+      
+
+
+}
