@@ -24,10 +24,12 @@ const PrivateSector = () => {
     <>
       <Header header={data.title} description={data.description} />
       <div className="p-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+        <div className="flex flex-col  bg-prime rounded gap-4 mt-4">
+        <h1 className="text-3xl font-bold text-center text-yellow-300 pt-3">{data.title}</h1>
+        <div className="h-1 bg-yellow-300 w-[10%] mx-auto"></div>
           {data.content.map((item, index) => (
             <Slide left duration={2000} key={index}>
-              <div className="flex items-start space-x-4 p-4 bg-prime shadow-md rounded-md">
+              <div className="flex items-start space-x-4 p-4 bg-gray-950">
                 <div className="text-blue-500 text-2xl">{icons[item.icon]}</div>
                 <p className="text-white">{item.text}</p>
               </div>

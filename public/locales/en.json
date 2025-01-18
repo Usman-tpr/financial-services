@@ -32,8 +32,9 @@
     "navitem5Submenu1":"Senior Management",
 
 
-    "title":"Empowering Your Financial Future with Trusted Advisory and Taxation Solutions",
-    "description":"At AlHayat, we provide expert financial advisory and tax solutions to businesses and individuals across Afghanistan. Our experienced team is dedicated to helping you navigate complex financial landscapes, ensuring compliance, optimizing tax strategies, and driving sustainable growth. Whether you're looking for tax advice, financial planning, or business consulting, AlHayat is here to support your financial success.",
+    "title": "Simplifying Your Financial Journey",
+    "description": "AlHayat offers expert tax and financial advisory services to help you stay compliant, save money, and grow confidently. Your success is our priority.",
+    "readMore": "Read More",
 
     "comment2":"Home About Section **********************************************************************************************",
     "aboutSectionTitle":"AlHayat Company at a Glance",
@@ -50,10 +51,11 @@
 
     "comment3":"ourmission ******************************************************************************************************",
         "alHayat": {
-          "missionTitle": "Our Mission",
-          "missionDescription": "AlHayat is a professional corporation dedicated to providing the most trusted quality financial and tax advisory services. We go beyond traditional methods to deliver innovative solutions, fostering the growth of our clients by keeping our promises, offering proactive support, and building capacity while serving the community.",
-          "visionTitle": "Our Vision",
-          "visionDescription": "To be recognized as one of the most trusted and respected financial service providers on both National and International levels.",
+          "missionTitle": "Our Mission & Vision",
+           "missionDescription": "At AlHayat, our mission is to provide exceptional financial and tax advisory services that our clients can rely on. We are dedicated to going beyond traditional approaches by offering innovative and customized solutions tailored to the unique needs of individuals and businesses. Our commitment is to empower our clients by ensuring they have the tools, knowledge, and guidance to thrive in today’s competitive environment. With a focus on integrity, excellence, and proactive support, we deliver on our promises and build long-lasting relationships. As part of our mission.",
+            "visionDescription": "Our vision is to become a globally recognized leader in financial and tax advisory services. we envision a future where AlHayat serves as a beacon of reliability, professionalism, and innovation. Our ultimate goal is to create a positive and lasting impact on our clients, our community, and the financial world as a whole.",
+
+
           "whyTitle": "Why AlHayat?",
           "whyPoints": [
             "Unmatched expertise in financial and tax services",
@@ -126,21 +128,36 @@
                     "comment7":"footer ***********************************************************************************************",
                         "footer": {
                           "brand_name": "AlHAYAT",
+                          "about_title": "About Alhayat",
+                          "about_desc":" is a trusted provider of comprehensive legal, financial, and tax advisory services, catering to a diverse clientele that includes private and public organizations, national and international entities, NGOs, and businesses of all sizes. Based in Kabul, Afghanistan, Alhayat is dedicated to delivering tailored solutions to meet the unique needs of its clients, ensuring compliance, efficiency, and strategic growth. With a commitment to excellence, Alhayat supports organizations in navigating complex regulatory and financial landscapes, empowering them to achieve their goals with confidence.",
                           "about_us": "About Us",
+                          "about_menu1":"Who We Are",
+                          "about_menu2":"Our Goals",
+                          "about_menu3":"Our Clients",
+                          "about_menu4":"People",
+                          "follow":"Follow Us",
                           "services": "Services",
+                          "services_menu1":"Tax Advisory",
+                          "services_menu2":"Legal Consultant",
+                          "services_menu3":"Financial Advisory",
                           "sectors": "Sectors",
                           "clients": "Clients",
                           "peoples": "Peoples",
                           "careers": "Careers",
                           "contact_us": "Contact Us",
                           "quick_links": "Quick Links",
+                          "quick_menu1":"Privacy Policy",
+                          "quick_menu2":"Terms & Conditions",
+                          "quick_menu3":"FAQ's",
+                          "quick_menu4":"Request for Qoutations",
                           "follow_us": "Follow Us",
                           "newsletter": "Subscribe to Our Newsletter",
                           "newsletter_placeholder": "Enter your email",
                           "subscribe_button": "Subscribe",
-                          "address": "123 Main Street, Kabul, Afghanistan",
-                          "email": "info@alhayat.com",
-                          "phone": "+1234567890"
+                          "address": "Bakhtawar Plaza Street, Shahr-e-Naw, District # 10th, Kabul-Afghanistan",
+                          "email": "info@alhayat.af",
+                          "rights":"Alhayat. All rights reserved. Powered By: Aria Delta",
+                          "phone": "+93(0) 729650336"
                         },
 
                         "comment8":"About all pages ******************************************************",

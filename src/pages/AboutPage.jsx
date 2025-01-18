@@ -62,24 +62,26 @@ const AboutPage = () => {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-10 mx-0 sm:mx-24">
                         {services.map((service, index) => (
-                        <Slide left duration={2000}>
+                        <Slide >
                              <div
                                 key={index}
                                 className="bg-white rounded-lg shadow-md overflow-hidden"
                             >
-                              <Slide bottom >
+                              <Slide bottom duration={2000}>
                               <img
                                     src={service.image}
                                     alt={service.title}
                                     className="w-full h-60 object-cover"
                                 />
                               </Slide>
-                                <div className="p-4">
+                              <Slide top duration={2000}>
+                              <div className="p-4">
                                     <h3 className="text-xl font-bold text-prime mb-2">
                                         {service.title}
                                     </h3>
                                     <p className="text-gray-600 mb-5">{service.description}</p>
                                 </div>
+                              </Slide>
                             </div>
                         </Slide>
                         ))}

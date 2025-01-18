@@ -42,12 +42,11 @@ const TaxationPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             {section.content.map((item, i) => (
-            <Slide right duration={2000}>
                   <div key={i} className="flex items-start space-x-4 p-4 bg-prime shadow-md rounded-md">
-                <div className="text-blue-500 text-2xl">{icons[item.icon]}</div>
-                <p className="text-white">{item.text}</p>
+                    <Slide right ><div className="text-blue-500 text-2xl">{icons[item.icon]}</div>  </Slide>
+                <Slide left><p className="text-white">{item.text}</p></Slide>
               </div>
-            </Slide>
+
             ))}
           </div>
         </div>

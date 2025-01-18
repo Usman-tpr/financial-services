@@ -31,14 +31,16 @@ const OurValues = () => {
                         <div className="flex flex-col sm:flex-row justify-around items-center">
                             <ul className="space-y-4">
                                 {values.map((value, index) => (
-                                    <li key={index} className="flex items-center space-x-4">
+                                  <Slide top>
+                                      <li key={index} className="flex items-center space-x-4">
                                         <FaCheckCircle className="text-green-500 text-2xl" />
                                         <span className="text-lg text-gray-700">{value}</span>
                                     </li>
+                                  </Slide>
                                 ))}
                             </ul>
 
-                           <Slide right duration={2000}>
+                           <Slide bottom >
                            <div>
                                 <img src="https://cdn.pixabay.com/photo/2014/03/24/17/15/mortgage-295211_640.png" alt="" />
                             </div>

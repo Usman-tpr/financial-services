@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Slide } from 'react-reveal';
+import CenterLine from '../../common/CenterLine';
 
 const AboutSection = () => {
   const { t } = useTranslation()
@@ -9,11 +10,12 @@ const AboutSection = () => {
     <div className=" py-16 !bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Heading Section */}
-        <Slide left duration={3000}>
-          <h1 className="text-lg md:text-2xl font-bold text-prime mb-6 text-center">
+        <Slide bottom duration={2000}>
+          <h1 className="text-lg md:text-3xl font-extrabold text-prime  text-center">
             {t("aboutSectionTitle")}
           </h1>
         </Slide>
+        <CenterLine />
 
         {/* Introduction Section */}
         <p className="text-lg md:text-xl text-gray-800 leading-relaxed text-center">
@@ -21,17 +23,17 @@ const AboutSection = () => {
         </p>
 
         {/* Services Section */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {[
             {
               title: t("aboutSectionCardTitle2"),
               desc: t("aboutSectionCardDesc2"),
-              image: "https://cdn.pixabay.com/photo/2022/12/02/11/24/tax-7630744_1280.png"
+              image: "https://cdn.pixabay.com/photo/2023/07/19/23/04/ai-generated-8138052_640.png"
             },
             {
               title: t("aboutSectionCardTitle3"),
               desc: t("aboutSectionCardDesc3"),
-              image: "https://cdn.pixabay.com/photo/2015/02/21/17/46/finantial-644453_640.png"
+              image: "https://cdn.pixabay.com/photo/2012/04/26/19/51/money-42955_640.png"
             },
             {
               title: t("aboutSectionCardTitle4"),
@@ -41,19 +43,25 @@ const AboutSection = () => {
             {
               title: t("aboutSectionCardTitle5"),
               desc: t("aboutSectionCardDesc5"),
-              image: "https://cdn.pixabay.com/photo/2016/03/31/20/40/arrow-1295953_640.png"
+              image: "https://cdn.pixabay.com/photo/2013/07/12/16/31/cost-151072_640.png"
             },
           ].map((service, index) => (
-            <Slide bottom duration={2000}>
+            <Slide>
               <div
                 key={index}
-                className="p-6 bg-prime rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300"
+                className="p-6 bg-prime flex space-x-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300"
               >
-                <img src={service.image} alt="" className='w-36 mx-auto' />
-                <h3 className="text-2xl font-bold text-yellow-300 mb-2 mt-6 text-center">
-                  {service.title}
-                </h3>
-                <p className="text-gray-200 text-center">{service.desc}</p>
+                <Slide bottom duration={2000}>
+                  <img src={service.image} alt="" className='w-36 mx-auto' />
+                </Slide>
+                <Slide right duration={2000}>
+                  <div>
+                    <h3 className="text-2xl font-bold text-yellow-300">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-200 ">{service.desc}</p>
+                  </div>
+                </Slide>
               </div>
             </Slide>
           ))}

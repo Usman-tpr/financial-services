@@ -13,17 +13,17 @@ const PrivacyPolicyPage = () => {
       {/* Main Content */}
       <section className="container mx-auto bg-white rounded-lg shadow-lg p-8 space-y-8">
         {/* Privacy Commitment */}
-        <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <div className="bg-prime text-white p-4 rounded">
+          <h2 className="text-3xl font-bold mb-4">
             {t("privacyPolicyPage.commitmentTitle")}
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg">
             {t("privacyPolicyPage.commitmentText")}
           </p>
         </div>
 
         {/* Personal Information Policy */}
-        <div>
+        <div className="bg-gray-200 text-white p-4 rounded">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             {t("privacyPolicyPage.personalInfoTitle")}
           </h2>
@@ -33,7 +33,7 @@ const PrivacyPolicyPage = () => {
         </div>
 
         {/* Rules of Conduct */}
-        <div>
+        <div className="bg-gray-300 text-white p-4 rounded">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             {t("privacyPolicyPage.rulesTitle")}
           </h2>
@@ -43,11 +43,11 @@ const PrivacyPolicyPage = () => {
         </div>
 
         {/* Recourse Section */}
-        <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <div className="bg-prime text-white p-4 rounded">
+          <h2 className="text-3xl font-bold  mb-4">
             {t("privacyPolicyPage.recourseTitle")}
           </h2>
-          <p className="text-lg text-gray-700 mb-4">
+          <p className="text-lg  mb-4">
             {t("privacyPolicyPage.recourseText")}
           </p>
           <ul className="space-y-2">
