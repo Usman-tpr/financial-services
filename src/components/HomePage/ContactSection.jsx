@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaPhoneAlt, FaFacebook, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Importing icons
+import CenterLine from "../../common/CenterLine";
 
 const ContactSection = () => {
   const { t } = useTranslation();
@@ -9,7 +10,8 @@ const ContactSection = () => {
     <section className="bg-gray-100 py-16 px-4">
       <div className="container mx-auto text-center">
         {/* Section Title */}
-        <h2 className="text-3xl font-semibold text-black mb-4">{t("contact_section.title")}</h2>
+        <h2 className="text-3xl font-semibold text-black ">{t("contact_section.title")}</h2>
+        <CenterLine />
 
         {/* Description */}
         <p className="text-lg text-gray-700 mb-8">{t("contact_section.description")}</p>

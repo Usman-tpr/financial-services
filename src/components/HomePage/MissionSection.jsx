@@ -46,11 +46,12 @@ const AlHayatSection = () => {
                 
               <div className="py-16 px-6 md:px-12 lg:px-24">
               <h3
-                    className="text-3xl font-bold text-black mb-8 text-center"
+                    className="text-3xl font-bold text-black text-center"
                 >
                     {t("alHayat.whyTitle")}
                 </h3>
-                <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <CenterLine />
+                <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-5">
                     {t("alHayat.whyPoints", { returnObjects: true }).map(
                         (point, index) => (
                             <Slide left duration={2000}>

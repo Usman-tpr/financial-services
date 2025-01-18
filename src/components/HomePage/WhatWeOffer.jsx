@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Slide } from "react-reveal";
+import CenterLine from "../../common/CenterLine";
 
 const WhatWeOffer = () => {
     const { t } = useTranslation();
@@ -12,10 +13,11 @@ const WhatWeOffer = () => {
         <section className="py-16 px-32 bg-white">
             <div className="container mx-auto text-center">
                 {/* Title */}
-                <h2 className="text-3xl font-semibold text-gray-800 mb-8">{t("what_we_offer.title")}</h2>
+                <h2 className="text-3xl font-semibold text-gray-800 ">{t("what_we_offer.title")}</h2>
+                <CenterLine />
 
                 {/* Service List */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-5">
                     {services.map((service, index) => (
                    <Slide right duration={2000}>
                          <div
