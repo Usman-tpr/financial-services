@@ -41,9 +41,9 @@ const Navbar = () => {
 
 
                 <div className='flex justify-between space-x-4 text-md tracking-wide font-medium '>
-                    <h1>About</h1>
-                    <h1>Contact</h1>
-                    <h1>Request For Qoutation</h1>
+                    <Link to='/about' className='hover:text-yellow-300 font-semibold'>About</Link>
+                    <Link to='/contact' className='hover:text-yellow-300 font-semibold'>Contact</Link>
+                    <h1 className='hover:text-yellow-300 font-semibold'>Request For Qoutation</h1>
                 </div>
                 <div className='flex justify-between space-x-4 text-md tracking-wide font-medium'>
                     <h1>English | </h1>
@@ -202,7 +202,6 @@ const Navbar = () => {
 
 
                     <Link to="/careers" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem6')}  </Link>
-                    <Link to="/contact" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem7')}  </Link>
                 </div>
 
                 <div className='flex  text-lg font-medium '>
@@ -216,7 +215,7 @@ const Navbar = () => {
                         </Slide>
                     }
                     <button
-                        className='text-3xl text-white relative right-10 hover:text-yellow-300 duration-300'
+                        className='text-3xl text-yellow-300 relative right-10 hover:text-yellow-300 duration-300'
                        onClick={(()=> setShowSearchInput(!showSearchInput))}
                     >
                         <FiSearch />

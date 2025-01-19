@@ -1,5 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
+import { ImLocation2 } from 'react-icons/im'
 import { Slide } from 'react-reveal'
 
 const HeroSection = () => {
@@ -18,6 +20,26 @@ const HeroSection = () => {
           <Slide bottom duration={2000}>
             <h1 className='text-lg font-semibold text-center  mx-20 mt-2'> {t("description")}</h1>
 
+          </Slide>
+          <div className='flex space-x-5 mt-4 items-center justify-center'>
+            <Slide left duration={2000}>
+              <div className="flex items-center font-medium">
+                <FaEnvelope className="mr-2 text-xl" />
+                <span className='text-prime text-xl font-semibold'>  {t("footer.email")}</span>
+              </div>
+            </Slide>
+            <Slide right duration={2000}>
+              <div className="flex items-center  font-medium">
+                <FaPhoneAlt className="mr-2 text-xl" />
+                <span className='text-prime text-xl font-semibold'>{t("footer.phone")}</span>
+              </div>
+            </Slide>
+          </div>
+          <Slide bottom duration={2000}>
+            <div className="flex items-center font-medium mt-2">
+              <ImLocation2 className="mr-2 text-xl" />
+              <span className='text-prime text-xl font-semibold'>{t("footer.address")}</span>
+            </div>
           </Slide>
           <button className='text-prime bg-yellow-300 px-4   py-2 rounded w-auto text-xl font-semibold mt-5'>Read More</button>
         </div>
