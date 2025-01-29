@@ -21,13 +21,13 @@ const ContactSection = () => {
           {/* Phone */}
           <div className="flex items-center text-xl text-prime font-medium">
             <FaPhoneAlt className="mr-2 text-xl" />
-            <span>{t("contact_section.phone_label")}: +1234567890</span>
+            <span>{t("contact_section.phone_label")}:{t("privacyPolicyPage.phone")}</span>
           </div>
 
           {/* Email */}
           <div className="flex items-center text-xl text-prime font-medium">
             <FaEnvelope className="mr-2 text-xl" />
-            <span>{t("contact_section.email_label")}: contact@alhayat.com</span>
+            <span>{t("contact_section.email_label")}: {t("privacyPolicyPage.email")}</span>
           </div>
 
           {/* Facebook */}
@@ -55,6 +55,22 @@ const ContactSection = () => {
               {t("contact_section.linkedin_label")}
             </a>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full px-4 md:px-0 md:w-[1100px] mx-auto my-12">
+        {/* <h2 className="text-center text-4xl font-bold my-8 text-mstheme">
+          {t("contactPage-map-title")}
+        </h2> */}
+        <div className="w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            title="Shahre Now – Kabul, Afghanistan"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.812324009622!2d69.12888999999999!3d34.489444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d16eb10e6c0001%3A0x54a8e0e60bcfd6e!2sShahre%20Now%2C%20Kabul%2C%20Afghanistan!5e0!3m2!1sen!2s!4v1721567216406!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </section>

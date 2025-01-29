@@ -2,45 +2,16 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Slide } from "react-reveal";
 import CenterLine from "../../common/CenterLine";
+import { Link } from "react-router-dom";
+import { FaUpRightFromSquare } from "react-icons/fa6";
 
 const AlHayatSection = () => {
     const { t } = useTranslation();
 
     return (
-        <section className="bg-white  relative">
+        <section className="bg-white  relative mt-10">
             <div className="w-full mx-auto ">
-                <div className="bg-prime text-white py-10 px-6 md:px-12 lg:px-24">
-
-                    {/* Animated Heading - Our Mission */}
-                    <h2
-                        className="text-3xl font-extrabold text-yellow-300 text-center"
-                    >
-                        <Slide bottom duration={2000}> {t("alHayat.missionTitle")}</Slide>
-
-                    </h2>
-                    <div className="h-1 w-[10%] mx-auto my-2 bg-yellow-300 "></div>
-                    <div className="flex sm:flex-row text-white flex-col justify-between items-center">
-                        <div className=" w-[80%]">
-                            <Slide >
-
-                                <p className="text-lg mb-5">
-                                    {t("alHayat.missionDescription")}
-                                </p>
-                                <p className="text-lg mb-12">
-                                    {t("alHayat.visionDescription")}
-                                </p>
-                            </Slide>
-                        </div>
-
-                        <div className="w-[20%]">
-                            <Slide bottom duration={2000}>
-                                <img src="https://cdn.pixabay.com/photo/2020/09/18/18/21/money-5582600_640.png" alt="" className=" object-contain ease-linear duration-[5s]" />
-                            </Slide>
-                        </div>
-                    </div>
-
-
-                </div>
+              
 
                 {/* Why AlHayat Section */}
                 
@@ -86,6 +57,11 @@ const AlHayatSection = () => {
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 bg-yellow-300 rounded-full w-20 h-20 opacity-50 blur-2xl"></div>
             <div className="absolute bottom-0 left-0 bg-green-300 rounded-full w-28 h-28 opacity-50 blur-2xl"></div>
+            <Slide >
+                <div className='flex items-center justify-center mb-10'>
+                    <Link to='/about' className='hover:bg-prime hover:text-white duration-700  text-prime underline underline-offset-4 rounded text-xl font-bold  px-10 py-2 flex  items-center '>{t("readMore")}  <FaUpRightFromSquare className='pl-2 mt-1 text-2xl' /></Link>
+                </div>
+            </Slide>
         </section>
     );
 };

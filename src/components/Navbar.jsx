@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaBars, FaTimes, FaGlobe } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { RiArrowDownSFill } from "react-icons/ri";
@@ -7,6 +7,15 @@ import { FaCaretRight } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import { FaPhoneAlt, FaFacebook, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Importing icons
 import { Slide } from 'react-reveal';
+import { SiMoneygram } from "react-icons/si";
+import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
+import { PiIntersectThreeBold } from "react-icons/pi";
+import { PiPaperclipFill } from "react-icons/pi";
+import { MdGroups2 } from "react-icons/md";
+import { MdOutlineConstruction } from "react-icons/md";
+import cookies from "js-cookie";
+import i18next from "i18next";
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,10 +29,59 @@ const Navbar = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+    const languages = [
+
+        {
+          code: "per",
+          name: "دری | ",
+          dir: "rtl",
+          country_code: "ir",
+        },
+        {
+          code: "ps",
+          name: "پښتو",
+          dir: "rtl",
+          country_code: "pk",
+        },
+        {
+          code: "en",
+          name: "| English",
+          country_code: "gb",
+        },
+      ];
+    
+      const [isDropdownOpen, setDropdownOpen] = useState(false);
+      const [topOffset, setTopOffset] = useState(40);
+    
+    
+      const currentLanguageCode = cookies.get("i18next") || "en";
+      const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+    
+      useEffect(() => {
+        document.body.dir = currentLanguage.dir || "ltr";
+        if (cookies.get("i18next") === "ps" || cookies.get("i18next") === "per") {
+          document.body.className = "persian-font";
+        }
+        else {
+          document.body.className = "english-font";
+        }
+      }, [currentLanguage, t]);
+    
+      const toggleDropdown = () => {
+        console.log("hover")
+        setDropdownOpen(!isDropdownOpen);
+      };
+    
+      const handleLanguageChange = (code) => {
+        i18next.changeLanguage(code);
+        localStorage.setItem("AGCC", code)
+        setDropdownOpen(false); // Close dropdown after selection
+      };
+    
 
     return (
         <>
-            <div className='px-2 p-3 sm:px-10 flex sm:flex-row flex-col justify-between bg-prime text-white'>
+            <div className='px-2 p-1 sm:px-10 flex sm:flex-row flex-col justify-between text-prime bg-gray-950 bg-opacity-10'>
                 <div className='flex space-x-10 text-md font-medium '>
 
                     {/* Email */}
@@ -41,32 +99,41 @@ const Navbar = () => {
 
 
                 <div className='flex justify-between space-x-4 text-md tracking-wide font-medium '>
-                    <Link to='/about' className='hover:text-yellow-300 font-semibold'>About</Link>
-                    <Link to='/contact' className='hover:text-yellow-300 font-semibold'>Contact</Link>
-                    <h1 className='hover:text-yellow-300 font-semibold'>Request For Qoutation</h1>
+                    <Link to='/about' className='hover:text-primefont-semibold'>About</Link>
+                    <Link to='/contact' className='hover:text-primefont-semibold'>Contact</Link>
+                    <h1 className='hover:text-primefont-semibold'>Request For Qoutation</h1>
                 </div>
                 <div className='flex justify-between space-x-4 text-md tracking-wide font-medium'>
-                    <h1>English | </h1>
-                    <h1>English | </h1>
-                    <h1>English | </h1>
+                {languages
+                    .filter((language) => language.code !== localStorage.getItem("AGCC"))
+                    .map((language) => (
+                      <div key={language.code}>
+                        <h1
+                          onClick={() => handleLanguageChange(language.code)}
+                        >
+                          {language.name} 
+                        </h1>
+                      </div>
+                    ))}
 
                 </div>
             </div>
 
-            <div className='flex justify-between items-center bg-prime mt-1 '>
+            <div className='flex justify-between items-center text-prime  mt-1 '>
                 <div>
-                    <img src="/images/1.png" className='w-20' alt="" />
+                    <img src="/images/logo.png" className='w-44 h-13 bg-white' alt="" />
                 </div>
 
-                <div className="hidden md:flex space-x-6 text-yellow-300 tracking-wider">
+                <div className="hidden md:flex space-x-6 text-primetracking-wider">
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <SiMoneygram size={20} className='mr-1'/>
                             {t('navitem1')}
                             <RiArrowDownSFill size={20} />
                         </label>
                         <ul
                             tabIndex={0}
-                            className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                            className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                         >
                             <li className='mt-1'>
                                 <Link to='/about' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -91,13 +158,14 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <GiPerspectiveDiceSixFacesRandom size={25} className='mr-1'/>
                             {t('navitem2')}
                             <RiArrowDownSFill size={20} />
                         </label>
                         <ul
                             tabIndex={0}
-                            className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                            className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                         >
                             <li className='mt-1'>
                                 <Link to='/services' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -137,13 +205,14 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <PiIntersectThreeBold size={25} className='mr-1'/>
                             {t('navitem3')}
                             <RiArrowDownSFill size={20} />
                         </label>
                         <ul
                             tabIndex={0}
-                            className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                            className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                         >
                             <li className='mt-1'>
                                 <Link to='/sectors' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -168,13 +237,14 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <PiPaperclipFill size={25} className='mr-1'/>
                             {t('navitem4')}
                             <RiArrowDownSFill size={20} />
                         </label>
                         <ul
                             tabIndex={0}
-                            className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                            className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                         >
                             <li className='mt-1'>
                                 <Link to='/our-clients' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -184,13 +254,14 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <MdGroups2 size={25} className='mr-1' />
                             {t('navitem5')}
                             <RiArrowDownSFill size={20} />
                         </label>
                         <ul
                             tabIndex={0}
-                            className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                            className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                         >
                             <li className='mt-1'>
                                 <Link to='/about/history' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -201,7 +272,7 @@ const Navbar = () => {
                     </li>
 
 
-                    <Link to="/careers" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem6')}  </Link>
+                    <Link to="/careers" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center"><MdOutlineConstruction size={25} className='mr-1' />{t('navitem6')}  </Link>
                 </div>
 
                 <div className='flex  text-lg font-medium '>
@@ -215,7 +286,7 @@ const Navbar = () => {
                         </Slide>
                     }
                     <button
-                        className='text-3xl text-yellow-300 relative right-10 hover:text-yellow-300 duration-300'
+                        className='text-3xl text-primerelative right-10 hover:text-primeduration-300'
                        onClick={(()=> setShowSearchInput(!showSearchInput))}
                     >
                         <FiSearch />
@@ -231,13 +302,13 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:flex space-x-6">
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
                                 {t('navitem1')}
                                 <RiArrowDownSFill size={20} />
                             </label>
                             <ul
                                 tabIndex={0}
-                                className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                                className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                             >
                                 <li className='mt-1'>
                                     <Link to='/about' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -262,13 +333,13 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
                                 {t('navitem2')}
                                 <RiArrowDownSFill size={20} />
                             </label>
                             <ul
                                 tabIndex={0}
-                                className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                                className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                             >
                                 <li className='mt-1'>
                                     <Link to='/services' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -308,13 +379,13 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
                                 {t('navitem3')}
                                 <RiArrowDownSFill size={20} />
                             </label>
                             <ul
                                 tabIndex={0}
-                                className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                                className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                             >
                                 <li className='mt-1'>
                                     <Link to='/sectors' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -339,13 +410,13 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
                                 {t('navitem4')}
                                 <RiArrowDownSFill size={20} />
                             </label>
                             <ul
                                 tabIndex={0}
-                                className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                                className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                             >
                                 <li className='mt-1'>
                                     <Link to='/our-clients' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -355,13 +426,13 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
                                 {t('navitem5')}
                                 <RiArrowDownSFill size={20} />
                             </label>
                             <ul
                                 tabIndex={0}
-                                className="dropdown-content p-2 shadow bg-gray-800 text-fontcolor rounded-box w-44 sm:w-64 mt-1 z-20"
+                                className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
                             >
                                 <li className='mt-1'>
                                     <Link to='/about/history' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
@@ -372,8 +443,8 @@ const Navbar = () => {
                         </li>
 
 
-                        <Link to="/careers" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem6')}  </Link>
-                        <Link to="/contact" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem7')}  </Link>
+                        <Link to="/careers" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem6')}  </Link>
+                        <Link to="/contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem7')}  </Link>
                     </div>
                     <div className="flex items-center space-x-4">
                         <div className="relative group">
@@ -391,13 +462,13 @@ const Navbar = () => {
                 </div>
                 {isOpen && (
                     <div className="md:hidden bg-gray-800 text-white flex flex-col space-y-4 mt-4 p-4">
-                        <a href="#home" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem1')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#about" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem2')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#services" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem3')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#contact" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem4')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#contact" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem5')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#contact" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem6')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#contact" className="hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem7')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem1')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#about" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem2')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#services" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem3')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem4')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem5')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem6')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem7')} <RiArrowDownSFill size={20} /> </a>
                     </div>
                 )}
             </nav>

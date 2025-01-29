@@ -37,6 +37,15 @@
     "readMore": "Read More",
 
     "comment2":"Home About Section **********************************************************************************************",
+    "h1":"Alhayat Consulting Firm",
+    "t1":"Strategic Guidance for Suitable Succes",
+    "t2":"Your Trusted Partner for Legal, Financial, and Tax Solutions",
+    "h2":"Our Expertise",
+    "t3":"“Guiding Success Through Legal, Financial, and Tax Excellence",
+    "h3":"Trusted Advisors",
+    "t4":"Integrity, Excellence, and Client-Centric SolutionsOur expert team combines local knowledge with globalstandards to navigate Afghanistan's legal and financiallandscape",
+    "h4":"News & Media ",
+    "t5":"STAY INFORMED: ACCESS THE LATEST UPDATES, JOB OPPORTUNITIES, AND COMPANY INSIGHTS HERE.",
     "aboutSectionTitle":"AlHayat Company at a Glance",
     "aboutSectionDesc":"AlHayat Company, established in 2015, is a trusted financial and tax advisory firm led by a team of industry leaders with globally recognized qualifications. Committed to delivering excellence, AlHayat combines experience, innovation, and integrity to empower businesses and individuals alike",
     "aboutSectionCardTitle2":"Taxation Services",
@@ -56,35 +65,36 @@
             "visionDescription": "Our vision is to become a globally recognized leader in financial and tax advisory services. we envision a future where AlHayat serves as a beacon of reliability, professionalism, and innovation. Our ultimate goal is to create a positive and lasting impact on our clients, our community, and the financial world as a whole.",
 
 
-          "whyTitle": "Why AlHayat?",
+          "whyTitle": "“Find Whatever you need to know about Alhayat Consulting Firm",
           "whyPoints": [
-            "Unmatched expertise in financial and tax services",
-            "Client-centric approach with tailored solutions",
-            "Proven track record of excellence and integrity",
-            "Commitment to nurturing professional talent",
-            "Strong community focus with impactful initiatives",
-            "Comprehensive services under one roof"
+            "Who We Are?",
+            "Our Goals",
+            "Our Vision!",
+            "Our Mission",
+            "Alhayat by F&F!",
+            "Our Legacy"
           ]
         },
       
 
         "commment4":"what we offer ***********************************************************************************************",
             "what_we_offer": {
-              "title": "What We Offer",
+              "title": "Services",
+              "desc": "Building Upon Own Expertise",
               "services": [
                 {
-                  "name": "Advisory",
-                  "description": "Expert advice on strategic decisions, financial management, and more.",
+                  "name": " Legal Advisory",
+                  "description": "Expert Guidance Across Diverse Legal Domains",
                   "icon": "/images/advisory.png"
                 },
                 {
-                  "name": "Taxation",
-                  "description": "Tax advisory and compliance services for businesses and individuals.",
+                  "name": "Financial Advisory",
+                  "description": "Strategic Solutions for Financial Growth",
                   "icon": "/images/taxadvisory.png"
                 },
                 {
-                  "name": "Capacity Development",
-                  "description": "Training and development services to enhance skills and capabilities.",
+                  "name": "Tax Consultancy",
+                  "description": "Simplifying Compliance, Maximizing Value",
                   "icon": "/images/capacity.png"
                 },
                 {
@@ -93,15 +103,11 @@
                   "icon": "/images/legal.png"
                 },
                 {
-                  "name": "Research & Survey",
-                  "description": "Conducting detailed research and surveys to support business decisions.",
+                  "name": "Startups & Foreign Investors",
+                  "description": "Your Gateway to Afghanistan’s Marke",
                   "icon": "/images/research.png"
-                },
-                {
-                  "name": "Asset Management",
-                  "description": "Managing assets for optimal growth and performance.",
-                  "icon": "/images/asset.png"
                 }
+               
               ]
             },
 
@@ -129,7 +135,7 @@
                         "footer": {
                           "brand_name": "AlHAYAT",
                           "about_title": "About Alhayat",
-                          "about_desc":" is a trusted provider of comprehensive legal, financial, and tax advisory services, catering to a diverse clientele that includes private and public organizations, national and international entities, NGOs, and businesses of all sizes. Based in Kabul, Afghanistan, Alhayat is dedicated to delivering tailored solutions to meet the unique needs of its clients, ensuring compliance, efficiency, and strategic growth. With a commitment to excellence, Alhayat supports organizations in navigating complex regulatory and financial landscapes, empowering them to achieve their goals with confidence.",
+                          "about_desc":" Alhayat Consulting Firm is a premier provider of legal, financial, and taxadvisory services in Afghanistan. Founded on the principles ofexcellence, integrity, and innovation, we specialize in offering tailoredsolutions to individuals, businesses, startups, and foreign investors.Our multidisciplinary team, including legal experts, financialstrategists, and retired judges, delivers comprehensive support acrosssectors. ",
                           "about_us": "About Us",
                           "about_menu1":"Who We Are",
                           "about_menu2":"Our Goals",
@@ -155,9 +161,9 @@
                           "newsletter_placeholder": "Enter your email",
                           "subscribe_button": "Subscribe",
                           "address": "Bakhtawar Plaza Street, Shahr-e-Naw, District # 10th, Kabul-Afghanistan",
-                          "email": "info@alhayat.af",
+                          "email": "Alhayat.af",
                           "rights":"Alhayat. All rights reserved. Powered By: Aria Delta",
-                          "phone": "+93(0) 729650336"
+                          "phone": "+93 79 501 7281"
                         },
 
                         "comment8":"About all pages ******************************************************",
@@ -222,9 +228,9 @@
                                           "recourseTitle": "Recourse",
                                           "recourseText": "If you have concerns or complaints about your personal information or our Privacy Policy, contact our Privacy and Confidentiality leader in writing by email or mail.",
                                           "phoneLabel": "Phone",
-                                          "phone": "+93 (0) 776 41 53 81",
+                                          "phone": "+93 79 501 7281",
                                           "emailLabel": "Email",
-                                          "email": "privacy@alhayat.org.af",
+                                          "email": "Alhayat.af",
                                           "addressLabel": "Address",
                                           "address": "OFFICE #6, 4TH FLOOR, Muslim Business Center, Haji Yaqoob Square, Shar-e-naw Kabul, Afghanistan"
                                         },
@@ -926,18 +932,17 @@
                                                                   },
                                                                   "email": {
                                                                     "title": "Email Us",
-                                                                    "content": "info@eca.org.af"
+                                                                    "content": "Alhayat.af"
                                                                   },
                                                                   "phone": {
                                                                     "title": "Call Us",
                                                                     "numbers": [
-                                                                      "+93 (0) 20 22 02 179",
-                                                                      "+93 (0) 798 87 17 45"
+                                                                      "+93 79 501 7281"
                                                                     ]
                                                                   },
                                                                   "contactForm": {
                                                                     "name": "Your Name",
-                                                                    "email": "Your Email",
+                                                                    "email": "Alhayat.af",
                                                                     "message": "Message",
                                                                     "button": "Send Message"
                                                                   }

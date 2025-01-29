@@ -6,6 +6,10 @@ import MissionSection from '../components/HomePage/MissionSection';
 import WhatWeOffer from '../components/HomePage/WhatWeOffer';
 import SubscribeSection from '../components/HomePage/SubscribeSection';
 import ContactSection from '../components/HomePage/ContactSection';
+import AlhayatConfirm from '../components/HomePage/AlhayatConfirm';
+import Experties from '../components/HomePage/Experties';
+import NewsAndMedia from '../components/HomePage/News&Media';
+import TeamOverview from '../components/HomePage/TeamOverview';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -16,10 +20,15 @@ const Home = () => {
       {/* <Navbar /> */}
       <HeroSection />
       <AboutSection />
+      <AlhayatConfirm />
+      <NewsAndMedia />
+      <Experties />
       <MissionSection />
       <WhatWeOffer />
+      <TeamOverview />
       <SubscribeSection />
       <ContactSection />
+
 
     </>
   )
