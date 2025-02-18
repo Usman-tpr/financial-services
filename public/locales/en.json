@@ -5,9 +5,10 @@
     "navitem2":"Services",
     "navitem3":"Sectors",
     "navitem4":"Clients",
-    "navitem5":"Peoples",
-    "navitem6":"Careers",
+    "navitem5":"Team",
+    "navitem6":"Legislation",
     "navitem7":"Contact Us",
+    "home":"Home",
 
     "navitem1Submenu1":"The Essence of AlHayat",
     "navitem1Submenu2":"Our Values",
@@ -35,6 +36,53 @@
     "title": "Simplifying Your Financial Journey",
     "description": "AlHayat offers expert tax and financial advisory services to help you stay compliant, save money, and grow confidently. Your success is our priority.",
     "readMore": "Read More",
+
+
+    "commentnew":"********************************************************************************************************88",
+
+
+    "valuesPage": {
+    "title": "Our Values",
+    "description": "Discover the core values that guide our work and define our culture.",
+    "subtitle": "What We Stand For"
+  },
+  "values": {
+    "integrity": {
+      "title": "Integrity",
+      "description": "We maintain the highest ethical standards, building long-term relationships based on trust and transparency."
+    },
+    "excellence": {
+      "title": "Excellence",
+      "description": "Our team brings deep expertise and strategic thinking, ensuring that our clients receive exceptional legal and business advice."
+    },
+    "confidentiality": {
+      "title": "Confidentiality",
+      "description": "We safeguard our clients' sensitive information, prioritizing privacy and trust in all our dealings."
+    },
+    "clientCentric": {
+      "title": "Client-Centric Approach",
+      "description": "We tailor our services to the unique needs of each client, ensuring that their business interests are well protected and nurtured."
+    }
+  },
+  "missionVisionPage": {
+    "title": "Our Mission & Vision",
+    "description": "Discover our mission and vision that guide our actions and decisions.",
+    "missionTitle": "Our Mission",
+    "missionText": "Alhayat Legal, Financial & Tax Company is dedicated to providing its clients with professional and personalized solutions in legal, financial, and tax matters. With a commitment to excellence, integrity, and innovation, the company strives to be the leading provider of legal, financial, and tax advisory services in Afghanistan. By combining in-depth local knowledge with international standards, Alhayat aims to foster the growth of businesses, ensure legal compliance, and support clients in managing their financial and tax obligations effectively.",
+    "missionImage": "https://cdn.pixabay.com/photo/2021/06/01/06/26/mountain-6293072_960_720.jpg",
+    "visionTitle": "Our Vision",
+    "visionText": "Our vision is to become a globally recognized leader in legal, financial, and tax advisory services. We envision a future where AlHayat serves as a beacon of reliability, professionalism, and innovation. Our ultimate goal is to create a positive and lasting impact on our clients, our community, and the financial world as a whole.",
+    "visionImage": "https://cdn.pixabay.com/photo/2020/08/01/12/05/mountain-5459900_960_720.jpg"
+  },
+  "privacyPage": {
+    "title": "Privacy",
+    "textCorrectionTitle": "Text Correction",
+    "textCorrectionDescription": "Ensure that all text is accurate and free of errors.",
+    "emailTitle": "Email",
+    "emailDescription": "For inquiries, please email us at info@alhayat.com.",
+    "postBoxTitle": "Post Box",
+    "postBoxDescription": "You can also reach us via post at P.O. Box 123, Kabul, Afghanistan."
+  },
 
     "comment2":"Home About Section **********************************************************************************************",
     "h1":"Alhayat Consulting Firm",
@@ -170,8 +218,8 @@
                             "aboutPage": {
                               "title": "About AlHayat Company",
                               "description": "AlHayat Company is a trusted financial advisory and taxation company based in Afghanistan.",
-                              "glanceTitle": "AlHayat at a Glance",
-                              "glanceDescription": "AlHayat is a privately owned company with extensive experience in finance, taxation, and advisory services. The team is comprised of professionals holding ACCA, CA, CPA, CIA, and other qualifications, ensuring exceptional service delivery.",
+                              "glanceTitle": "The Essence of al-Hayat",
+                              "glanceDescription": "Alhayat Legal, Financial & Tax Company is a premier consultancy firm based in Afghanistan. It offers expert services in legal, financial, and tax advisory across diverse sectors. The company provides in-depth solutions and guidance to private-sector businesses, government entities, and individual clients. With a team of experienced professionals, Alhayat Legal, Financial & Tax Company is committed to delivering comprehensive, efficient, and legally sound advice tailored to the needs of the Afghan market and its unique legal and regulatory framework.The company prides itself on its expertise in Sharia law, tax law, and finance, with a team of renowned legal and financial experts who combine extensive knowledge of Afghan and international legal systems with practical, real-world experience. Alhayat's clients benefit from a multi-disciplinary approach that integrates legal advice with financial strategy and tax compliance.",
                               "servicesTitle": "Scope of Services"
                             },
                             "individualsInvestors": "Individuals and Investors",
@@ -187,33 +235,39 @@
                             "ngos": "National & International NGOs",
                             "ngosDescription": "Providing financial advisory and management services to NGOs working locally and globally.",
 
-                            "comment9":"second page *******************************************************************************************",
-                                "valuesPage": {
-                                  "title": "Our Values",
-                                  "description": "At AlHayat, we uphold the principles that drive our excellence and commitment to our clients and community.",
-                                  "subtitle": "AlHayat Values WIESCEL"
-                                },
-                                "values": {
-                                  "workEthic": "Work Ethic",
-                                  "integrity": "Integrity",
-                                  "employeesAsset": "Employees: Our Most Valuable Asset",
-                                  "clientService": "Service to Our Clients & Community",
-                                  "confidentiality": "Confidentiality & Competency",
-                                  "expertPartners": "Expert Business Partners",
-                                  "leadershipManagement": "Leadership & Management"
-                                },
-
-                                "comment":"third paage ****************************************************************************************",
-                                    "missionVisionPage": {
-                                      "title": "Our Mission & Vision",
-                                      "description": "Discover the principles and aspirations that define AlHayat's success.",
-                                      "missionTitle": "Our Mission",
-                                      "missionText": "AlHayat is a professional corporation committed to providing the most trusted quality services to clients. In addition, it will go beyond just the numbers and provide non-traditional services. AlHayat’s goal is to enhance the client's growth by honoring its promises to them, providing proactive assistance and consultation while continuously developing the staff capacity and serving the community by supporting and participating in civil activities.",
-                                      "missionImage": "https://cdn.pixabay.com/photo/2023/07/19/23/04/ai-generated-8138052_640.png",
-                                      "visionTitle": "Our Vision",
-                                      "visionText": "To be reckoned as one of the 'Best Service Providers' on National and International levels.",
-                                      "visionImage": "https://cdn.pixabay.com/photo/2024/11/07/23/06/analytics-9181979_640.png"
-                                    },
+                           "servicesHeader": {
+    "title": "Our Expert Services",
+    "description": "Empowering businesses with expert legal, financial, and tax solutions tailored to your needs."
+  },
+  "services": [
+    {
+      "category": "Legal Advisory Services",
+      "icon": "legal",
+      "points": [
+        "📜 **Corporate & Commercial Law:** Expert guidance on business formation, contracts, mergers, and dispute resolution to ensure compliance with Afghan and international laws.",
+        "⚖️ **Sharia Law Compliance:** Specialized services for businesses and individuals ensuring financial and contractual adherence to Islamic principles.",
+        "🏛️ **Litigation & Dispute Resolution:** Strong representation in Afghan courts and alternative dispute resolution, ensuring the best possible outcomes."
+      ]
+    },
+    {
+      "category": "Financial Services",
+      "icon": "financial",
+      "points": [
+        "💰 **Financial Planning & Strategy:** Personalized investment and wealth management solutions to secure your financial future.",
+        "📊 **Business Advisory:** Helping businesses enhance profitability, streamline operations, and mitigate risks with expert financial consulting.",
+        "🏦 **Corporate Finance:** Assistance with capital raising, mergers, and acquisitions to help businesses grow and thrive."
+      ]
+    },
+    {
+      "category": "Tax Advisory & Compliance",
+      "icon": "tax",
+      "points": [
+        "🧾 **Tax Planning & Strategy:** Optimizing tax structures to minimize liabilities while ensuring full compliance with Afghan tax regulations.",
+        "⚖️ **Tax Disputes & Litigation:** Professional representation in tax conflicts, helping businesses resolve disputes with tax authorities.",
+        "🌍 **International Taxation:** Expert advice on cross-border tax matters for foreign investors and businesses navigating Afghanistan’s tax system."
+      ]
+    }
+  ],
 
                                     "comment10":"fourth page **************************************************************************************",
                                         "privacyPolicyPage": {
@@ -235,98 +289,7 @@
                                           "address": "OFFICE #6, 4TH FLOOR, Muslim Business Center, Haji Yaqoob Square, Shar-e-naw Kabul, Afghanistan"
                                         },
 
-                                        "comment11":"services page ******************************************************************************************",
-                                            "services": [
-                                              {
-                                                "category": "Advisory",
-                                                "points": [
-                                                  "Risk Advisory & Crises Management",
-                                                  "Accounting and Book Keeping",
-                                                  "Financial Planning",
-                                                  "Budgeting, forecasting and business planning",
-                                                  "Management accounting",
-                                                  "Business Consultancy",
-                                                  "Human Resources",
-                                                  "Litigation Support",
-                                                  "Business Valuation",
-                                                  "Payroll Management",
-                                                  "Standards for Not-For-Profit Organizations (ASNPO)",
-                                                  "Company secretarial services including company formation & promotion"
-                                                ]
-                                              },
-                                              {
-                                                "category": "Taxation",
-                                                "points": [
-                                                  "Corporate Tax Compliance",
-                                                  "Employment Tax",
-                                                  "Income Tax",
-                                                  "Value Added Tax-VAT",
-                                                  "Property Tax",
-                                                  "International/Double Taxation",
-                                                  "Tax Controversy and Dispute Resolution",
-                                                  "Tax Advisory"
-                                                ]
-                                              },
-                                              {
-                                                "category": "Capacity Development",
-                                                "points": [
-                                                  "Financial Management",
-                                                  "Accounting and Auditing",
-                                                  "Business Management",
-                                                  "Human Resource",
-                                                  "Strategy Management",
-                                                  "Office Management",
-                                                  "Quality Management System",
-                                                  "Planning and Budgeting",
-                                                  "Business Communication",
-                                                  "Risk Management",
-                                                  "Internal Controls & Audit"
-                                                ]
-                                              },
-                                              {
-                                                "category": "Legal & Corporate",
-                                                "points": [
-                                                  "Consultation for legal information and advice",
-                                                  "Consultation to review documents (such as agreements, leases, wills, corporation documents, do-it-yourself court forms)",
-                                                  "Mediation, arbitration, or other third party services",
-                                                  "Preparation of litigation documents",
-                                                  "Obtaining business license for national and international orgs",
-                                                  "Emigration services as obtaining entry Visa and Work Permit",
-                                                  "Assistance the client with dissolution procedures",
-                                                  "Recruitment support to national and international orgs",
-                                                  "Procurement support to national and international orgs",
-                                                  "Facilities Management support to national and international orgs"
-                                                ]
-                                              },
-                                              {
-                                                "category": "Research & Survey",
-                                                "points": [
-                                                  "Qualitative Research",
-                                                  "Quantitative Research",
-                                                  "Theoretical Research",
-                                                  "Applied Research",
-                                                  "Exploratory Research",
-                                                  "Descriptive Research",
-                                                  "Casual and Fundamental Research",
-                                                  "Experimental Research",
-                                                  "Online Surveys",
-                                                  "Paper Surveys",
-                                                  "Cross-Sectional Studies",
-                                                  "Longitudinal Surveys"
-                                                ]
-                                              },
-                                              {
-                                                "category": "Asset Management",
-                                                "points": [
-                                                  "Cash Management Service",
-                                                  "Inventory Planning & controlling",
-                                                  "Replenishment Services",
-                                                  "Material Optimization",
-                                                  "Inventory Cost Accounting",
-                                                  "Warehouse Operations Optimization"
-                                                ]
-                                              }
-                                            ],
+                                    
 
                                             "comment12":"advisory *************************************************************************************",
                                               "header": "Our Approach",

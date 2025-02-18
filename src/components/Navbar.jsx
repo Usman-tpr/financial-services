@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars, FaTimes, FaGlobe } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import { RiArrowDownSFill } from "react-icons/ri";
+import { RiArrowDownSFill, RiTeamFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 import { FaCaretRight } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
@@ -11,10 +11,13 @@ import { SiMoneygram } from "react-icons/si";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import { PiIntersectThreeBold } from "react-icons/pi";
 import { PiPaperclipFill } from "react-icons/pi";
-import { MdGroups2 } from "react-icons/md";
+import { MdGroups2, MdPolicy } from "react-icons/md";
 import { MdOutlineConstruction } from "react-icons/md";
 import cookies from "js-cookie";
 import i18next from "i18next";
+import { BiHome } from 'react-icons/bi';
+import { HiHome } from 'react-icons/hi';
+import { LuAward } from 'react-icons/lu';
 
 
 const Navbar = () => {
@@ -119,14 +122,16 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className='flex justify-between items-center text-prime  mt-1 '>
-                <div>
-                    <img src="/images/logo.png" className='w-44 h-13 bg-white' alt="" />
-                </div>
+            <div className='flex justify-between items-center text-prime mt-1 mx-10'>
+                <Link to='/'>
+                    <img src="/images/logo.png" className='w-32 py-2 h-13 bg-white' alt="" />
+                </Link>
 
-                <div className="hidden md:flex space-x-6 text-primetracking-wider">
+                <div className="hidden md:flex space-x-10 text-primetracking-wider">
+                <Link to="/" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center"><HiHome size={20} className='mr-1' />{t('home')}  </Link>
+
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                         <SiMoneygram size={20} className='mr-1'/>
                             {t('navitem1')}
                             <RiArrowDownSFill size={20} />
@@ -150,15 +155,16 @@ const Navbar = () => {
                                     <FaCaretRight />        {t("navitem1Submenu3")}
                                 </Link>
                             </li>
-                            <li className='mt-1'>
+                            {/* <li className='mt-1'>
                                 <Link to='/privacy&Policy' className="flex items-center gap-2 font-medium hover:bg-gray-200  hover:text-prime p-2  rounded focus:bg-gray-300 focus:text-prime focus:outline-none">
                                     <FaCaretRight />        {t("navitem1Submenu4")}
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </li>
+                    
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label tabIndex={0} href="#home"  className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                         <GiPerspectiveDiceSixFacesRandom size={25} className='mr-1'/>
                             {t('navitem2')}
                             <RiArrowDownSFill size={20} />
@@ -172,7 +178,7 @@ const Navbar = () => {
                                     <FaCaretRight />  {t("navitem2Submenu1")}
                                 </Link>
                             </li>
-                            <li className='mt-1'>
+                            {/* <li className='mt-1'>
                                 <Link to='advisory' className="flex items-center gap-2 font-medium hover:bg-gray-200  hover:text-prime p-2  rounded focus:bg-gray-300 focus:text-prime focus:outline-none">
                                     <FaCaretRight />        {t("navitem2Submenu2")}
                                 </Link>
@@ -201,11 +207,11 @@ const Navbar = () => {
                                 <Link to='/asset' className="flex items-center gap-2 font-medium hover:bg-gray-200  hover:text-prime p-2  rounded focus:bg-gray-300 focus:text-prime focus:outline-none">
                                     <FaCaretRight />        {t("navitem2Submenu7")}
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </li>
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label  tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                         <PiIntersectThreeBold size={25} className='mr-1'/>
                             {t('navitem3')}
                             <RiArrowDownSFill size={20} />
@@ -219,7 +225,7 @@ const Navbar = () => {
                                     <FaCaretRight />  {t("navitem3Submenu1")}
                                 </Link>
                             </li>
-                            <li className='mt-1'>
+                            {/* <li className='mt-1'>
                                 <Link to='/public-sector' className="flex items-center gap-2 font-medium hover:bg-gray-200  hover:text-prime p-2  rounded focus:bg-gray-300 focus:text-prime focus:outline-none">
                                     <FaCaretRight />        {t("navitem3Submenu2")}
                                 </Link>
@@ -233,11 +239,11 @@ const Navbar = () => {
                                 <Link to='/ngo-sector' className="flex items-center gap-2 font-medium hover:bg-gray-200  hover:text-prime p-2  rounded focus:bg-gray-300 focus:text-prime focus:outline-none">
                                     <FaCaretRight />        {t("navitem3Submenu4")}
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </li>
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                        <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                         <PiPaperclipFill size={25} className='mr-1'/>
                             {t('navitem4')}
                             <RiArrowDownSFill size={20} />
@@ -253,26 +259,11 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </li>
-                    <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
-                        <MdGroups2 size={25} className='mr-1' />
-                            {t('navitem5')}
-                            <RiArrowDownSFill size={20} />
-                        </label>
-                        <ul
-                            tabIndex={0}
-                            className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
-                        >
-                            <li className='mt-1'>
-                                <Link to='/about/history' className="flex items-center gap-2 font-medium hover:bg-gray-200 hover:text-prime p-2  rounded focus:bg-gray-600 focus:text-prime focus:outline-none">
-                                    <FaCaretRight />  {t("navitem5Submenu1")}
-                                </Link>
-                            </li>
-                        </ul>
-                    </li>
+                    <Link to="/our-team" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center"><RiTeamFill size={25} className='mr-1' />{t('navitem5')}  </Link>
 
 
-                    <Link to="/careers" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center"><MdOutlineConstruction size={25} className='mr-1' />{t('navitem6')}  </Link>
+
+                    <Link to="/careers" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center"><MdPolicy size={25} className='mr-1' />{t('navitem6')}  </Link>
                 </div>
 
                 <div className='flex  text-lg font-medium '>
@@ -302,7 +293,7 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:flex space-x-6">
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                                 {t('navitem1')}
                                 <RiArrowDownSFill size={20} />
                             </label>
@@ -333,7 +324,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                                 {t('navitem2')}
                                 <RiArrowDownSFill size={20} />
                             </label>
@@ -379,7 +370,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                                 {t('navitem3')}
                                 <RiArrowDownSFill size={20} />
                             </label>
@@ -410,7 +401,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                                 {t('navitem4')}
                                 <RiArrowDownSFill size={20} />
                             </label>
@@ -426,7 +417,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="dropdown dropdown-hover">
-                            <label tabIndex={0} href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">
+                            <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                                 {t('navitem5')}
                                 <RiArrowDownSFill size={20} />
                             </label>
@@ -443,8 +434,8 @@ const Navbar = () => {
                         </li>
 
 
-                        <Link to="/careers" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem6')}  </Link>
-                        <Link to="/contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem7')}  </Link>
+                        <Link to="/careers" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem6')}  </Link>
+                        <Link to="/contact" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem7')}  </Link>
                     </div>
                     <div className="flex items-center space-x-4">
                         <div className="relative group">
@@ -462,13 +453,13 @@ const Navbar = () => {
                 </div>
                 {isOpen && (
                     <div className="md:hidden bg-gray-800 text-white flex flex-col space-y-4 mt-4 p-4">
-                        <a href="#home" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem1')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#about" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem2')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#services" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem3')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem4')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem5')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem6')} <RiArrowDownSFill size={20} /> </a>
-                        <a href="#contact" className="text-xl hover:text-ternary duration-500  hover:bg-secondary p-4 font-semibold flex items-center">{t('navitem7')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem1')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#about" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem2')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#services" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem3')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#contact" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem4')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#contact" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem5')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#contact" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem6')} <RiArrowDownSFill size={20} /> </a>
+                        <a href="#contact" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">{t('navitem7')} <RiArrowDownSFill size={20} /> </a>
                     </div>
                 )}
             </nav>

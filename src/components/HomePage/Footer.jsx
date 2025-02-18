@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-2 px-4">
-      <div className="container flex space-x-20">
+      <div className="container  flex flex-col md:flex-row  space-y-10 md:space-x-20">
         {/* Company Info */}
 
         <div className="space-y-6 w-[50%]">
@@ -70,7 +70,7 @@ const Footer = () => {
 
 
         {/* Quick Links */}
-        <div className="space-y-4 sm:mt-14">
+        <div className="space-y-4 sm:mt-14 ">
           <h3 className="text-xl font-bold bg-white text-prime rounded px-4 w-36">{t("footer.quick_links")}</h3>
           <ul className="space-y-2">
             <li>

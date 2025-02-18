@@ -21,6 +21,7 @@ import NGOSector from './components/HomePage/NGOSector'
 import ClientPage from './components/HomePage/ClientPage'
 import Careers from './components/HomePage/careers'
 import Contact from './components/HomePage/Contact'
+import OurTeam from './pages/OurTeam'
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
         <Route path='/our-clients' element={<ClientPage />} />
         <Route path='/careers' element={<Careers />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/our-team' element={<OurTeam />} />
 
       </Routes>
       <Footer />

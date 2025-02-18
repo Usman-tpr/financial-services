@@ -46,14 +46,16 @@ const AboutPage = () => {
             <div className="bg-gray-100 py-12 px-4">
 
                 {/* About Section */}
-                <section className="container mx-auto mb-16">
-                    <h2 className="text-3xl font-bold text-prime mb-6 text-center">
+             <div className="mx-28 bg-white p-5 rounded bg-opacity-50 text-white">
+             <section className="container mx-auto mb-16">
+                    <h2 className="text-3xl font-bold text-prime mb-6 text-center border-b-2 border-gray-300 pb-3">
                         {t("aboutPage.glanceTitle")}
                     </h2>
-                    <p className="text-prime mb-6 text-center">
+                    <p className="text-prime mb-6 text-center tracking-wide text-lg font-medium">
                         {t("aboutPage.glanceDescription")}
                     </p>
                 </section>
+             </div>
 
                 {/* Scope of Services Section */}
                 <section className="container mx-auto">

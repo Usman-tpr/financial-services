@@ -8,13 +8,22 @@ const OurValues = () => {
     const { t } = useTranslation();
 
     const values = [
-        t("values.workEthic"),
-        t("values.integrity"),
-        t("values.employeesAsset"),
-        t("values.clientService"),
-        t("values.confidentiality"),
-        t("values.expertPartners"),
-        t("values.leadershipManagement"),
+        {
+            title: t("values.integrity.title"),
+            description: t("values.integrity.description"),
+        },
+        {
+            title: t("values.excellence.title"),
+            description: t("values.excellence.description"),
+        },
+        {
+            title: t("values.confidentiality.title"),
+            description: t("values.confidentiality.description"),
+        },
+        {
+            title: t("values.clientCentric.title"),
+            description: t("values.clientCentric.description"),
+        },
     ];
 
     return (
@@ -31,20 +40,22 @@ const OurValues = () => {
                         <div className="flex flex-col sm:flex-row justify-around items-center">
                             <ul className="space-y-4">
                                 {values.map((value, index) => (
-                                  <Slide top>
-                                      <li key={index} className="flex items-center space-x-4">
-                                        <FaCheckCircle className="text-green-500 text-2xl" />
-                                        <span className="text-lg text-gray-700">{value}</span>
-                                    </li>
-                                  </Slide>
+                                    <Slide top key={index}>
+                                        <li className="flex items-center space-x-4">
+                                            <FaCheckCircle className="text-green-500 text-2xl" />
+                                            <div>
+                                                <h3 className="text-xl font-bold text-gray-800">{value.title}</h3>
+                                                <p className="text-lg text-gray-700">{value.description}</p>
+                                            </div>
+                                        </li>
+                                    </Slide>
                                 ))}
                             </ul>
-
-                           <Slide bottom >
-                           <div>
-                                <img src="https://cdn.pixabay.com/photo/2014/03/24/17/15/mortgage-295211_640.png" alt="" />
-                            </div>
-                           </Slide>
+                            <Slide bottom>
+                                <div>
+                                    <img src="https://cdn.pixabay.com/photo/2014/03/24/17/15/mortgage-295211_640.png" alt="Values Illustration" />
+                                </div>
+                            </Slide>
                         </div>
                     </div>
                 </section>
