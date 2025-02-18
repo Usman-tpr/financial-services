@@ -35,52 +35,52 @@ const Navbar = () => {
     const languages = [
 
         {
-          code: "per",
-          name: "دری | ",
-          dir: "rtl",
-          country_code: "ir",
+            code: "per",
+            name: "دری",
+            dir: "rtl",
+            country_code: "ir",
         },
         {
-          code: "ps",
-          name: "پښتو",
-          dir: "rtl",
-          country_code: "pk",
+            code: "ps",
+            name: "پښتو",
+            dir: "rtl",
+            country_code: "pk",
         },
         {
-          code: "en",
-          name: "| English",
-          country_code: "gb",
+            code: "en",
+            name: "| English",
+            country_code: "gb",
         },
-      ];
-    
-      const [isDropdownOpen, setDropdownOpen] = useState(false);
-      const [topOffset, setTopOffset] = useState(40);
-    
-    
-      const currentLanguageCode = cookies.get("i18next") || "en";
-      const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
-    
-      useEffect(() => {
+    ];
+
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [topOffset, setTopOffset] = useState(40);
+
+
+    const currentLanguageCode = cookies.get("i18next") || "en";
+    const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+
+    useEffect(() => {
         document.body.dir = currentLanguage.dir || "ltr";
         if (cookies.get("i18next") === "ps" || cookies.get("i18next") === "per") {
-          document.body.className = "persian-font";
+            document.body.className = "persian-font";
         }
         else {
-          document.body.className = "english-font";
+            document.body.className = "english-font";
         }
-      }, [currentLanguage, t]);
-    
-      const toggleDropdown = () => {
+    }, [currentLanguage, t]);
+
+    const toggleDropdown = () => {
         console.log("hover")
         setDropdownOpen(!isDropdownOpen);
-      };
-    
-      const handleLanguageChange = (code) => {
+    };
+
+    const handleLanguageChange = (code) => {
         i18next.changeLanguage(code);
-        localStorage.setItem("AGCC", code)
+        localStorage.setItem("Alhayat", code)
         setDropdownOpen(false); // Close dropdown after selection
-      };
-    
+    };
+
 
     return (
         <>
@@ -107,17 +107,18 @@ const Navbar = () => {
                     <h1 className='hover:text-primefont-semibold'>Request For Qoutation</h1>
                 </div>
                 <div className='flex justify-between space-x-4 text-md tracking-wide font-medium'>
-                {languages
-                    .filter((language) => language.code !== localStorage.getItem("AGCC"))
-                    .map((language) => (
-                      <div key={language.code}>
-                        <h1
-                          onClick={() => handleLanguageChange(language.code)}
-                        >
-                          {language.name} 
-                        </h1>
-                      </div>
-                    ))}
+                    {languages
+                        .filter((language) => language.code !== localStorage.getItem("Alhayat"))
+                        .map((language) => (
+                            <div key={language.code}>
+                                <h1
+                                    onClick={() => handleLanguageChange(language.code)}
+                                    className='cursor-pointer'
+                                >
+                                    {language.name}{console.log(language.name)}
+                                </h1>
+                            </div>
+                        ))}
 
                 </div>
             </div>
@@ -128,11 +129,11 @@ const Navbar = () => {
                 </Link>
 
                 <div className="hidden md:flex space-x-10 text-primetracking-wider">
-                <Link to="/" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center"><HiHome size={20} className='mr-1' />{t('home')}  </Link>
+                    <Link to="/" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center"><HiHome size={20} className='mr-1' />{t('home')}  </Link>
 
                     <li className="dropdown dropdown-hover">
                         <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
-                        <SiMoneygram size={20} className='mr-1'/>
+                            <SiMoneygram size={20} className='mr-1' />
                             {t('navitem1')}
                             <RiArrowDownSFill size={20} />
                         </label>
@@ -162,10 +163,10 @@ const Navbar = () => {
                             </li> */}
                         </ul>
                     </li>
-                    
+
                     <li className="dropdown dropdown-hover">
-                        <label tabIndex={0} href="#home"  className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
-                        <GiPerspectiveDiceSixFacesRandom size={25} className='mr-1'/>
+                        <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
+                            <GiPerspectiveDiceSixFacesRandom size={25} className='mr-1' />
                             {t('navitem2')}
                             <RiArrowDownSFill size={20} />
                         </label>
@@ -211,8 +212,8 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li className="dropdown dropdown-hover">
-                        <label  tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
-                        <PiIntersectThreeBold size={25} className='mr-1'/>
+                        <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
+                            <PiIntersectThreeBold size={25} className='mr-1' />
                             {t('navitem3')}
                             <RiArrowDownSFill size={20} />
                         </label>
@@ -244,7 +245,7 @@ const Navbar = () => {
                     </li>
                     <li className="dropdown dropdown-hover">
                         <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
-                        <PiPaperclipFill size={25} className='mr-1'/>
+                            <PiPaperclipFill size={25} className='mr-1' />
                             {t('navitem4')}
                             <RiArrowDownSFill size={20} />
                         </label>
@@ -268,7 +269,7 @@ const Navbar = () => {
 
                 <div className='flex  text-lg font-medium '>
                     {showSearchInput &&
-                        <Slide left  duration={1000}>
+                        <Slide left duration={1000}>
                             <input
                                 type="text"
                                 className='px-2 py-2 rounded-l rounded-e-none  w-28 sm:w-80 border-prime border-2 text-prime placeholder:text-prime'
@@ -278,7 +279,7 @@ const Navbar = () => {
                     }
                     <button
                         className='text-3xl text-primerelative right-10 hover:text-primeduration-300'
-                       onClick={(()=> setShowSearchInput(!showSearchInput))}
+                        onClick={(() => setShowSearchInput(!showSearchInput))}
                     >
                         <FiSearch />
                     </button>
