@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Header'
 import { Slide } from 'react-reveal'
+import { useTranslation } from 'react-i18next'
 
 const sampleClients = [
     { name: "Afghan Trust", image: "/images/1.png" },
@@ -10,12 +11,13 @@ const sampleClients = [
 ]
 
 const ClientPage = () => {
+    const { t } = useTranslation()
     return (
         <>
-            <Header header={'Key Clients'} />
-            <h1 className='text-center text-prime text-4xl font-bold my-10'>Our Key Clients</h1>
+            {/* <Header header={'Key Clients'} /> */}
+            <h1 className='text-center text-prime text-4xl font-bold my-10'>{t("ourKeyClients")}</h1>
             <p className="text-center text-lg text-gray-700 mb-10">
-                We collaborate with key organizations in Afghanistan’s private and public sectors, including corporations, NGOs, and government entities.
+               {t("keyClientsDescription")}
             </p>
 
             <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 mx-4 sm:mx-20 gap-6 mb-10'>

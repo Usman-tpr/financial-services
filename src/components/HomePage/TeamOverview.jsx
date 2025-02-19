@@ -1,35 +1,38 @@
 import { FaBusinessTime, FaFileContract, FaBalanceScale, FaBullseye, FaTrophy, FaGlobe } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const WhyChooseUs = () => {
+  const { t } = useTranslation();
+
   const features = [
     {
-      title: 'Specialized Expertise',
-      description: 'We help foreign investors and startups grow their businesses in Afghanistan.',
+      title: t('specializedExpertise'),
+      description: t('specializedExpertiseDesc'),
       icon: <FaBusinessTime className="text-4xl text-blue-600" />,
     },
     {
-      title: 'Comprehensive Legal & Business Services',
-      description: 'From contract writing to investment consulting and tax compliance.',
+      title: t('comprehensiveLegalBusinessServices'),
+      description: t('comprehensiveLegalBusinessServicesDesc'),
       icon: <FaFileContract className="text-4xl text-blue-600" />,
     },
     {
-      title: 'In-depth Knowledge of Local Laws',
-      description: 'Ensuring your business stays compliant and minimizes risks.',
+      title: t('inDepthKnowledgeOfLocalLaws'),
+      description: t('inDepthKnowledgeOfLocalLawsDesc'),
       icon: <FaBalanceScale className="text-4xl text-blue-600" />,
     },
     {
-      title: 'Strategic Guidance',
-      description: 'Practical business-focused advice for navigating Afghanistan’s market conditions.',
+      title: t('strategicGuidance'),
+      description: t('strategicGuidanceDesc'),
       icon: <FaBullseye className="text-4xl text-blue-600" />,
     },
     {
-      title: 'Proven Track Record',
-      description: 'Successfully assisted numerous clients in business establishment and legal compliance.',
+      title: t('provenTrackRecord'),
+      description: t('provenTrackRecordDesc'),
       icon: <FaTrophy className="text-4xl text-blue-600" />,
     },
     {
-      title: 'International Standards',
-      description: 'Ensuring compliance with Afghan regulations and global best practices.',
+      title: t('internationalStandards'),
+      description: t('internationalStandardsDesc'),
       icon: <FaGlobe className="text-4xl text-blue-600" />,
     },
   ];
@@ -37,7 +40,7 @@ const WhyChooseUs = () => {
   return (
     <section className="bg-gray-50 py-12">
       <div className="max-w-screen-xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Why Choose Us?</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">{t('whyChooseUs')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div

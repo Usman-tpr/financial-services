@@ -210,7 +210,7 @@
                           "subscribe_button": "Subscribe",
                           "address": "Bakhtawar Plaza Street, Shahr-e-Naw, District # 10th, Kabul-Afghanistan",
                           "email": "Alhayat.af",
-                          "rights":"Alhayat. All rights reserved. Powered By: Aria Delta",
+                          "rights":"Alhayat. All rights reserved. Powered By: Aria Delta Consulting Group",
                           "phone": "+93 79 501 7281"
                         },
 
@@ -268,6 +268,26 @@
       ]
     }
   ],
+
+  
+    "whyChooseUs": "Why Choose Us?",
+    "specializedExpertise": "Specialized Expertise",
+    "specializedExpertiseDesc": "We help foreign investors and startups grow their businesses in Afghanistan.",
+    "comprehensiveLegalBusinessServices": "Comprehensive Legal & Business Services",
+    "comprehensiveLegalBusinessServicesDesc": "From contract writing to investment consulting and tax compliance.",
+    "inDepthKnowledgeOfLocalLaws": "In-depth Knowledge of Local Laws",
+    "inDepthKnowledgeOfLocalLawsDesc": "Ensuring your business stays compliant and minimizes risks.",
+    "strategicGuidance": "Strategic Guidance",
+    "strategicGuidanceDesc": "Practical business-focused advice for navigating Afghanistan’s market conditions.",
+    "provenTrackRecord": "Proven Track Record",
+    "provenTrackRecordDesc": "Successfully assisted numerous clients in business establishment and legal compliance.",
+    "internationalStandards": "International Standards",
+    "internationalStandardsDesc": "Ensuring compliance with Afghan regulations and global best practices.",
+    
+      "ourKeyClients": "Our Key Clients",
+      "keyClientsDescription": "We collaborate with key organizations in Afghanistan’s private and public sectors, including corporations, NGOs, and government entities.",
+    
+  
 
                                     "comment10":"fourth page **************************************************************************************",
                                         "privacyPolicyPage": {
@@ -715,7 +735,7 @@
                                                         "comment18":"sector *****************************************************",
                                                         
                                                           "sectortitle": "Sectors",
-                                                          "sectordescription": "Eagle-Wise Chartered Accountants collaborates with businesses, public enterprises, and NGOs to provide tailored audit, taxation, and advisory services for a wide range of industries.",
+                                                          "sectordescription": "AlHAYAT collaborates with businesses, public enterprises, and NGOs to provide tailored audit, taxation, and advisory services for a wide range of industries.",
                                                           "sectorsections": [
                                                             {
                                                               "header": "Private Sector",
@@ -790,7 +810,7 @@
                                                           "comment19":"pages of sectors **********************************************",
                                                             "publicsector": {
                                                               "title": "Public Sector",
-                                                              "description": "Eagle-Wise Chartered Accountants has the privilege of working with the public sector in Afghanistan, delivering high-quality services to the government and its people.",
+                                                              "description": "Alhayat has the privilege of working with the public sector in Afghanistan, delivering high-quality services to the government and its people.",
                                                               "content": [
                                                                 {
                                                                   "icon": "FaLightbulb",

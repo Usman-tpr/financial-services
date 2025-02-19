@@ -18,12 +18,14 @@ import i18next from "i18next";
 import { BiHome } from 'react-icons/bi';
 import { HiHome } from 'react-icons/hi';
 import { LuAward } from 'react-icons/lu';
+import QuoteForm from './HomePage/QuoteForm';
 
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [showSearchInput, setShowSearchInput] = useState(false)
     const { t, i18n } = useTranslation();
+      const [showForm, setShowForm] = useState(false);
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -36,13 +38,13 @@ const Navbar = () => {
 
         {
             code: "per",
-            name: "دری",
+            name: "| دری  ",
             dir: "rtl",
             country_code: "ir",
         },
         {
             code: "ps",
-            name: "پښتو",
+            name: "| پښتو",
             dir: "rtl",
             country_code: "pk",
         },
@@ -102,9 +104,9 @@ const Navbar = () => {
 
 
                 <div className='flex justify-between space-x-4 text-md tracking-wide font-medium '>
-                    <Link to='/about' className='hover:text-primefont-semibold'>About</Link>
-                    <Link to='/contact' className='hover:text-primefont-semibold'>Contact</Link>
-                    <h1 className='hover:text-primefont-semibold'>Request For Qoutation</h1>
+                    <Link to='/contact' className='hover:text-primefont-semibold'>Contact us</Link>
+                    <h1 className='hover:text-primefont-semibold cursor-pointer bg-prime text-white px-3 rounded-tr-xl rounded-bl-xl'onClick={() => setShowForm(!showForm)}>Request For Qoute</h1>
+                    <QuoteForm showForm={showForm} setShowForm={setShowForm}/>
                 </div>
                 <div className='flex justify-between space-x-4 text-md tracking-wide font-medium'>
                     {languages
@@ -243,12 +245,12 @@ const Navbar = () => {
                             </li> */}
                         </ul>
                     </li>
-                    <li className="dropdown dropdown-hover">
+                    {/* <li className="dropdown dropdown-hover">
                         <label tabIndex={0} href="#home" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center">
                             <PiPaperclipFill size={25} className='mr-1' />
                             {t('navitem4')}
                             <RiArrowDownSFill size={20} />
-                        </label>
+                        </label>    
                         <ul
                             tabIndex={0}
                             className="dropdown-content p-2 shadow bg-prime text-white rounded-box w-44 sm:w-64 mt-1 z-20"
@@ -259,7 +261,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         </ul>
-                    </li>
+                    </li> */}
                     <Link to="/our-team" className="text-md md:text-lg  hover:text-ternary duration-500  hover:bg-secondary p-2 rounded font-semibold flex items-center"><RiTeamFill size={25} className='mr-1' />{t('navitem5')}  </Link>
 
 
@@ -272,7 +274,7 @@ const Navbar = () => {
                         <Slide left duration={1000}>
                             <input
                                 type="text"
-                                className='px-2 py-2 rounded-l rounded-e-none  w-28 sm:w-80 border-prime border-2 text-prime placeholder:text-prime'
+                                className='px-2 py-2 rounded-l rounded-e-none  w-28 sm:w-52 border-prime border-2 text-prime placeholder:text-prime'
                                 placeholder='Search Here ....'
                             />
                         </Slide>
@@ -465,6 +467,9 @@ const Navbar = () => {
                 )}
             </nav>
         </div> */}
+            <a href="https://wa.me/+93795017281" target="_blank" className="fixed right-5 bottom-20 md:bottom-28 z-50 rounded-full">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Whatsapp icon" className=" w-11 md:w-16" />
+      </a>
         </>
     );
 };

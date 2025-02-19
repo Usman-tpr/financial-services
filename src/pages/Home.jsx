@@ -11,6 +11,7 @@ import Experties from '../components/HomePage/Experties';
 import NewsAndMedia from '../components/HomePage/News&Media';
 import TeamOverview from '../components/HomePage/TeamOverview';
 import CookieConsent from '../components/HomePage/CookieConsent'; // Import the CookieConsent component
+import ClientPage from '../components/HomePage/ClientPage';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -20,7 +21,8 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <AlhayatConfirm />
-      <NewsAndMedia />
+      {/* <NewsAndMedia /> */}
+      <ClientPage />
       <Experties />
       <MissionSection />
       <WhatWeOffer />

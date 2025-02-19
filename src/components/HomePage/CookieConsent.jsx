@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { Slide } from 'react-reveal';
@@ -6,6 +6,13 @@ import { Slide } from 'react-reveal';
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(true);
 
+  useEffect(() => {
+    const cookie= localStorage.getItem("cookieConsent")
+    if(cookie == "accepted"){
+      setIsVisible(false)
+    }
+
+  }, [])
   const handleAccept = () => {
     setIsVisible(false);
     localStorage.setItem('cookieConsent', 'accepted');
@@ -25,7 +32,7 @@ const CookieConsent = () => {
       <Slide bottom duration={3000}>
         <div
           className="fixed bottom-0 left-0 w-full bg-prime bg-opacity-90 text-white py-4 pt-10 px-8 shadow-lg"
-          
+
         >
           <div className='flex justify-end items-end '>
             <AiOutlineCloseCircle
